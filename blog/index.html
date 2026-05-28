@@ -147,6 +147,42 @@
     }
     .sidebar-tag:hover { background: var(--cream); }
 
+    /* NEWSLETTER */
+    .newsletter-section {
+      background: linear-gradient(135deg, #0f3d3a 0%, #1a5c57 100%);
+      color: #fff; padding: 80px 24px;
+    }
+    .newsletter-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+    .newsletter-tag {
+      display: inline-block; border: 1px solid rgba(255,255,255,0.35); color: rgba(255,255,255,0.7);
+      font-size: 0.7rem; letter-spacing: 0.18em; padding: 4px 14px; text-transform: uppercase; margin-bottom: 16px;
+    }
+    .newsletter-section h2 {
+      font-family: 'Noto Serif TC', serif; font-size: clamp(1.4rem, 3vw, 2rem);
+      font-weight: 900; margin-bottom: 12px; line-height: 1.4;
+    }
+    .newsletter-section .newsletter-inner > p { color: rgba(255,255,255,0.72); font-size: 0.97rem; margin-bottom: 36px; }
+    .newsletter-form { width: 100%; }
+    .form-row {
+      display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 14px;
+    }
+    .form-row input {
+      flex: 1; min-width: 180px; max-width: 240px;
+      padding: 14px 18px; border-radius: 8px;
+      font-size: 0.95rem; font-family: inherit; outline: none;
+      background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.25);
+    }
+    .form-row input::placeholder { color: rgba(255,255,255,0.5); }
+    .form-row input:focus { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.5); }
+    .form-row button {
+      background: #f5a623; color: #fff; border: none; border-radius: 8px;
+      padding: 14px 28px; font-size: 0.97rem; font-weight: 700; cursor: pointer;
+      font-family: inherit; transition: background 0.2s, transform 0.15s; white-space: nowrap;
+    }
+    .form-row button:hover { background: #e09010; transform: translateY(-1px); }
+    .form-disclaimer { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
+    @media (max-width: 520px) { .form-row { flex-direction: column; align-items: stretch; } .form-row input { max-width: 100%; } }
+
     /* FOOTER */
     footer { text-align: center; padding: 32px; color: var(--text-muted); font-size: 0.82rem; border-top: 1px solid var(--border); }
     footer a { color: var(--amber); text-decoration: none; }
@@ -286,6 +322,22 @@
   </aside>
 
 </div>
+
+<section id="newsletter" class="newsletter-section">
+  <div class="newsletter-inner">
+    <div class="newsletter-tag">免費訂閱</div>
+    <h2>加入擺攤週報，每週獲取市集實戰攻略</h2>
+    <p>每週一封，分享選品策略、攤位設計、銷售話術，幫你少走冤枉路、每場都有進步。</p>
+    <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="名稱" required>
+        <input type="email" name="email" placeholder="電子郵件" required>
+        <button type="submit">加入訂閱</button>
+      </div>
+      <p class="form-disclaimer">隨時可以取消，我們不會將你的資訊分享給第三方。</p>
+    </form>
+  </div>
+</section>
 
 <footer>
   <p>© 2026 市集擺攤指南 · <a href="/market-stall-guide/">回首頁</a> · 課程由 <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank">Ryan 在 PressPlay 開設</a></p>
