@@ -36,16 +36,16 @@
 
   <style>
     :root {
-      --ink: #1a1208;
-      --paper: #faf7f2;
-      --cream: #f2ead8;
-      --amber: #c8860a;
-      --amber-light: #e8a020;
-      --amber-pale: #fdf3dc;
-      --rust: #b34a1a;
-      --sage: #5a7a5a;
-      --border: #d4c4a0;
-      --text-muted: #6b5d47;
+      --ink: #4A3525;
+      --paper: #F4EBE1;
+      --cream: #EDE0D4;
+      --amber: #D97443;
+      --amber-light: #E8925A;
+      --amber-pale: #FDF0E8;
+      --rust: #B85D2A;
+      --sage: #607151;
+      --border: #C8B09A;
+      --text-muted: #7A6352;
     }
 
     * { margin: 0; padding: 0; box-sizing: border-box; }
@@ -109,7 +109,7 @@
       display: inline-block;
     }
     .nav-subscribe:hover {
-      background: #333;
+      background: #5C4035;
       animation: nav-subscribe-pulse 0.6s ease-in-out infinite;
     }
 
@@ -126,8 +126,8 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(ellipse at 30% 50%, rgba(200,134,10,0.15) 0%, transparent 60%),
-                  radial-gradient(ellipse at 70% 50%, rgba(179,74,26,0.1) 0%, transparent 60%);
+      background: radial-gradient(ellipse at 30% 50%, rgba(217,116,67,0.15) 0%, transparent 60%),
+                  radial-gradient(ellipse at 70% 50%, rgba(184,93,42,0.1) 0%, transparent 60%);
     }
     .hero-eyebrow {
       display: inline-block;
@@ -154,7 +154,7 @@
     }
     .hero-subtitle {
       font-size: clamp(0.95rem, 2vw, 1.15rem);
-      color: #c8bda8;
+      color: #C4AFA0;
       max-width: 600px;
       margin: 0 auto 36px;
       line-height: 1.9;
@@ -164,7 +164,7 @@
       justify-content: center;
       gap: 28px;
       font-size: 0.82rem;
-      color: #9a8a74;
+      color: #9A8070;
       flex-wrap: wrap;
     }
     .hero-meta span::before { content: '• '; color: var(--amber); }
@@ -247,7 +247,7 @@
 
     p {
       margin-bottom: 16px;
-      color: #3a2e20;
+      color: #3D2A1E;
       font-size: 0.97rem;
     }
 
@@ -259,11 +259,11 @@
       font-size: 0.92rem;
     }
     .callout-tip {
-      background: #f0f8f0;
+      background: #EFF5EC;
       border-left: 4px solid var(--sage);
     }
     .callout-warn {
-      background: #fff8f0;
+      background: #FDF0E8;
       border-left: 4px solid var(--amber);
     }
     .callout-stat {
@@ -430,7 +430,7 @@
       content: '';
       position: absolute;
       inset: 0;
-      background: radial-gradient(circle at 70% 30%, rgba(200,134,10,0.2), transparent 60%);
+      background: radial-gradient(circle at 70% 30%, rgba(217,116,67,0.2), transparent 60%);
     }
     .cta-mid-badge {
       display: inline-block;
@@ -450,7 +450,7 @@
       position: relative;
     }
     .cta-mid p {
-      color: #c8bda8;
+      color: #C4AFA0;
       font-size: 0.9rem;
       margin-bottom: 24px;
       position: relative;
@@ -461,7 +461,7 @@
     }
     .price-original {
       font-size: 0.88rem;
-      color: #9a8a74;
+      color: #9A8070;
       text-decoration: line-through;
       margin-bottom: 4px;
     }
@@ -472,7 +472,7 @@
       color: var(--amber-light);
       line-height: 1;
     }
-    .price-note { font-size: 0.8rem; color: #9a8a74; margin-top: 4px; }
+    .price-note { font-size: 0.8rem; color: #9A8070; margin-top: 4px; }
     .btn-primary {
       display: inline-block;
       background: var(--amber);
@@ -485,7 +485,7 @@
       transition: all 0.2s;
       position: relative;
     }
-    .btn-primary:hover { background: var(--amber-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(200,134,10,0.35); }
+    .btn-primary:hover { background: var(--amber-light); transform: translateY(-2px); box-shadow: 0 8px 24px rgba(217,116,67,0.35); }
     .cta-features {
       display: flex;
       justify-content: center;
@@ -493,7 +493,7 @@
       flex-wrap: wrap;
       margin-top: 20px;
       font-size: 0.8rem;
-      color: #9a8a74;
+      color: #9A8070;
       position: relative;
     }
     .cta-features span::before { content: '✓ '; color: var(--sage); }
@@ -558,7 +558,7 @@
     }
     .tc-card.is-center {
       transform: scale(1.04);
-      box-shadow: 0 10px 32px rgba(200,134,10,0.18);
+      box-shadow: 0 10px 32px rgba(217,116,67,0.18);
       border-color: var(--amber);
     }
     .tc-avatar-area {
@@ -574,7 +574,7 @@
     .tc-name-block { flex: 1; min-width: 0; }
     .tc-name { font-weight: 700; font-size: 0.97rem; color: var(--ink); }
     .tc-role { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
-    .tc-stars { font-size: 0.82rem; color: #f5a623; letter-spacing: 1px; margin-top: 4px; }
+    .tc-stars { font-size: 0.82rem; color: #D97443; letter-spacing: 1px; margin-top: 4px; }
     .tc-body { padding: 4px 20px 22px; border-top: 1px solid var(--border); }
     .tc-badge {
       display: inline-block; margin: 14px 0 10px;
@@ -603,7 +603,7 @@
 
     /* ── NEWSLETTER ── */
     .newsletter-section {
-      background: linear-gradient(135deg, #0f3d3a 0%, #1a5c57 100%);
+      background: linear-gradient(135deg, #4A5C35 0%, #607151 100%);
       color: #fff; padding: 80px 24px;
     }
     .newsletter-inner { max-width: 680px; margin: 0 auto; text-align: center; }
@@ -629,19 +629,19 @@
     .form-row input::placeholder { color: rgba(255,255,255,0.5); }
     .form-row input:focus { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.5); }
     .form-row button {
-      background: #f5a623; color: #fff; border: none; border-radius: 8px;
+      background: #D97443; color: #fff; border: none; border-radius: 8px;
       padding: 14px 28px; font-size: 0.97rem; font-weight: 700; cursor: pointer;
       font-family: inherit; transition: background 0.2s, transform 0.15s;
       white-space: nowrap;
     }
-    .form-row button:hover { background: #e09010; transform: translateY(-1px); }
+    .form-row button:hover { background: #B85D2A; transform: translateY(-1px); }
     .form-disclaimer { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
     @media (max-width: 520px) { .form-row { flex-direction: column; align-items: stretch; } .form-row input { max-width: 100%; } }
 
     /* ── FOOTER ── */
     footer {
       background: var(--ink);
-      color: #9a8a74;
+      color: #9A8070;
       text-align: center;
       padding: 28px 24px;
       font-size: 0.82rem;
@@ -711,6 +711,185 @@
       .hero { padding: 60px 20px 48px; }
       .final-cta { margin: 60px -20px 0; }
     }
+
+    /* ── LANDING PAGE SECTIONS ── */
+    .lp-section { padding: 72px 24px; }
+    .lp-section-alt { padding: 72px 24px; background: var(--cream); }
+    .lp-inner { max-width: 820px; margin: 0 auto; }
+
+    .lp-tag {
+      display: inline-block; border: 1px solid var(--amber); color: var(--amber);
+      font-size: 0.7rem; letter-spacing: 0.16em; padding: 4px 14px;
+      text-transform: uppercase; margin-bottom: 14px;
+    }
+    .lp-h2 {
+      font-family: 'Noto Serif TC', serif; font-weight: 900;
+      font-size: clamp(1.5rem, 3.5vw, 2.2rem); color: var(--ink);
+      line-height: 1.35; margin-bottom: 12px;
+    }
+    .lp-sub { color: var(--text-muted); font-size: 0.97rem; margin-bottom: 40px; }
+
+    /* Hero (Landing) */
+    .lp-hero {
+      background: var(--ink);
+      color: var(--paper);
+      padding: 88px 24px 72px;
+      text-align: center;
+      position: relative; overflow: hidden;
+    }
+    .lp-hero::before {
+      content: '';
+      position: absolute; inset: 0;
+      background: radial-gradient(ellipse at 50% 0%, rgba(217,116,67,0.18) 0%, transparent 65%);
+    }
+    .lp-hero-badge {
+      display: inline-block; border: 1px solid var(--amber); color: var(--amber-light);
+      font-size: 0.72rem; letter-spacing: 0.15em; padding: 5px 18px;
+      text-transform: uppercase; margin-bottom: 28px; position: relative;
+    }
+    .lp-hero h1 {
+      font-family: 'Noto Serif TC', serif; font-weight: 900;
+      font-size: clamp(1.9rem, 5vw, 3.2rem); line-height: 1.3;
+      margin-bottom: 20px; position: relative;
+    }
+    .lp-hero h1 em { font-style: normal; color: var(--amber-light); }
+    .lp-hero-sub {
+      color: #C4AFA0; font-size: clamp(1rem, 2vw, 1.15rem);
+      max-width: 600px; margin: 0 auto 36px; line-height: 1.85; position: relative;
+    }
+    .lp-btn-cta {
+      display: inline-block; background: var(--amber); color: #fff;
+      font-weight: 900; font-size: 1.1rem; padding: 16px 44px;
+      border-radius: 8px; text-decoration: none;
+      transition: background 0.2s, transform 0.15s; position: relative;
+    }
+    .lp-btn-cta:hover { background: var(--amber-light); transform: translateY(-2px); }
+    .lp-hero-price {
+      margin-top: 14px; font-size: 0.9rem; color: rgba(255,255,255,0.55);
+      position: relative;
+    }
+    .lp-hero-price strong { color: var(--amber-light); font-size: 1.05rem; }
+    .lp-trust-bar {
+      display: flex; justify-content: center; gap: 12px; flex-wrap: wrap;
+      margin-top: 36px; font-size: 0.82rem; color: rgba(255,255,255,0.5);
+      position: relative;
+    }
+    .lp-trust-bar span { display: flex; align-items: center; gap: 6px; }
+    .lp-trust-bar span::before { content: '✓'; color: var(--sage); font-weight: 700; }
+
+    /* Pain points grid */
+    .lp-pain-grid {
+      display: grid; grid-template-columns: 1fr 1fr;
+      gap: 14px; margin-bottom: 32px;
+    }
+    @media (max-width: 580px) { .lp-pain-grid { grid-template-columns: 1fr; } }
+    .lp-pain-card {
+      background: #fff; border: 1px solid var(--border); border-radius: 10px;
+      padding: 18px 20px; font-size: 0.93rem; color: var(--ink);
+      display: flex; gap: 12px; align-items: flex-start;
+    }
+    .lp-pain-icon { font-size: 1.4rem; flex-shrink: 0; line-height: 1.2; }
+    .lp-pain-card strong { display: block; margin-bottom: 4px; font-size: 0.95rem; }
+    .lp-pain-card p { font-size: 0.87rem; color: var(--text-muted); margin: 0; }
+    .lp-bridge {
+      text-align: center; font-family: 'Noto Serif TC', serif; font-size: 1.1rem;
+      font-weight: 700; color: var(--ink); background: var(--amber-pale);
+      border-left: 4px solid var(--amber); padding: 18px 24px; border-radius: 0 8px 8px 0;
+    }
+
+    /* Outcomes */
+    .lp-outcomes { display: flex; flex-direction: column; gap: 14px; }
+    .lp-outcome {
+      display: flex; gap: 20px; align-items: flex-start;
+      background: #fff; border: 1px solid var(--border); border-radius: 10px;
+      padding: 20px 24px;
+    }
+    .lp-out-icon {
+      flex-shrink: 0; width: 44px; height: 44px; border-radius: 10px;
+      background: var(--amber-pale); display: flex; align-items: center;
+      justify-content: center; font-size: 1.4rem;
+    }
+    .lp-outcome strong { display: block; font-size: 1rem; color: var(--ink); margin-bottom: 4px; }
+    .lp-outcome p { font-size: 0.88rem; color: var(--text-muted); margin: 0; }
+
+    /* Course modules */
+    .lp-modules { display: flex; flex-direction: column; gap: 12px; }
+    .lp-module {
+      display: flex; gap: 20px; align-items: flex-start;
+      background: #fff; border: 1px solid var(--border); border-radius: 10px;
+      padding: 20px 24px; transition: box-shadow 0.2s;
+    }
+    .lp-module:hover { box-shadow: 0 4px 16px rgba(0,0,0,0.07); }
+    .lp-mod-num {
+      flex-shrink: 0; width: 40px; height: 40px; border-radius: 50%;
+      background: var(--amber); color: #fff; display: flex; align-items: center;
+      justify-content: center; font-family: 'Noto Serif TC', serif;
+      font-size: 1rem; font-weight: 900;
+    }
+    .lp-module strong { display: block; font-size: 1rem; color: var(--ink); margin-bottom: 4px; }
+    .lp-module p { font-size: 0.88rem; color: var(--text-muted); margin: 0; }
+    .lp-module-bonus {
+      background: var(--amber-pale); border: 1px dashed var(--amber); border-radius: 10px;
+      padding: 16px 24px 16px 64px; font-size: 0.88rem; color: var(--rust);
+      position: relative;
+    }
+    .lp-module-bonus::before {
+      content: '🎁'; position: absolute; left: 24px; top: 50%;
+      transform: translateY(-50%); font-size: 1.3rem;
+    }
+
+    /* Pricing */
+    .lp-pricing { background: linear-gradient(135deg, var(--ink) 0%, #3D2A18 100%); padding: 80px 24px; }
+    .lp-price-box { max-width: 640px; margin: 0 auto; text-align: center; }
+    .lp-price-box .lp-tag { border-color: rgba(255,255,255,0.3); color: rgba(255,255,255,0.7); }
+    .lp-price-box .lp-h2 { color: var(--paper); }
+    .lp-price-original { font-size: 1rem; color: rgba(255,255,255,0.4); text-decoration: line-through; margin-top: 24px; }
+    .lp-price-current {
+      font-family: 'Noto Serif TC', serif; font-size: 3.2rem; font-weight: 900;
+      color: var(--amber-light); line-height: 1.1; margin: 6px 0 6px;
+    }
+    .lp-price-note { font-size: 0.85rem; color: rgba(255,255,255,0.5); margin-bottom: 32px; }
+    .lp-include-list {
+      list-style: none; display: flex; flex-direction: column; gap: 10px;
+      max-width: 400px; margin: 0 auto 36px; text-align: left;
+    }
+    .lp-include-list li {
+      display: flex; gap: 10px; font-size: 0.93rem; color: rgba(255,255,255,0.85);
+    }
+    .lp-include-list li::before { content: '✓'; color: var(--amber-light); font-weight: 900; flex-shrink: 0; }
+    .lp-price-btn {
+      display: inline-block; background: var(--amber); color: #fff;
+      font-weight: 900; font-size: 1.15rem; padding: 18px 52px;
+      border-radius: 10px; text-decoration: none; transition: background 0.2s, transform 0.15s;
+    }
+    .lp-price-btn:hover { background: var(--amber-light); transform: translateY(-3px); }
+    .lp-price-guarantee {
+      margin-top: 20px; font-size: 0.8rem; color: rgba(255,255,255,0.4);
+    }
+
+    /* Final CTA (LP) */
+    .lp-final {
+      background: var(--amber); padding: 72px 24px; text-align: center;
+    }
+    .lp-final h2 {
+      font-family: 'Noto Serif TC', serif; font-weight: 900;
+      font-size: clamp(1.5rem, 4vw, 2.2rem); color: #fff; margin-bottom: 14px;
+    }
+    .lp-final p { color: rgba(255,255,255,0.85); margin-bottom: 28px; font-size: 1rem; }
+    .lp-final-btn {
+      display: inline-block; background: #fff; color: var(--rust);
+      font-weight: 900; font-size: 1.1rem; padding: 16px 44px;
+      border-radius: 8px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s;
+    }
+    .lp-final-btn:hover { transform: translateY(-2px); box-shadow: 0 10px 30px rgba(0,0,0,0.2); }
+    .lp-final-note { margin-top: 16px; font-size: 0.8rem; color: rgba(255,255,255,0.55); }
+
+    @media (max-width: 600px) {
+      .lp-section, .lp-section-alt { padding: 52px 16px; }
+      .lp-hero { padding: 64px 16px 56px; }
+      .lp-pricing { padding: 64px 16px; }
+      .lp-final { padding: 56px 16px; }
+    }
   </style>
 </head>
 <body>
@@ -733,359 +912,175 @@
   </div>
 </nav>
 
-<div class="hero">
-  <div class="hero-eyebrow">2026 最新完整版</div>
-  <h1>市集擺攤<br>從<em>零基礎</em>到銷售破萬<br>新手完全指南</h1>
-  <p class="hero-subtitle">選品、定價、攤位設計、銷售話術——一篇全搞懂。<br>別讓第一場市集成為你放棄的理由。</p>
-  <div class="hero-meta">
-    <span>閱讀時間約 8 分鐘</span>
-    <span>適合完全新手</span>
-    <span>2026 年最新資訊</span>
-    <span>Ryan 撰寫</span>
+<!-- ① HERO -->
+<section class="lp-hero">
+  <div class="lp-hero-badge">台灣市集擺攤 · 系統化課程</div>
+  <h1>從零出攤到<em>單日破萬</em><br>不靠運氣，用方法</h1>
+  <p class="lp-hero-sub">30+ 場市集實戰、20+ 場單日破萬的攤主 Ryan，把這套成功系統濃縮成 2.5 小時課程——選品、定價、攤位設計、銷售話術，每一步都有公式可循。</p>
+  <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="lp-btn-cta">立即報名課程 →</a>
+  <div class="lp-hero-price">限時優惠 <strong>NT$1,380</strong>（原價 NT$3,880）</div>
+  <div class="lp-trust-bar">
+    <span>50+ 位學員</span>
+    <span>20 場單日破萬</span>
+    <span>2.5 小時學完</span>
+    <span>贈 5 張實用表格</span>
   </div>
-</div>
+</section>
 
-<div class="page-wrap">
-
-  <div class="toc-box">
-    <h2>📋 本文目錄</h2>
-    <ol>
-      <li><a href="#what-is">什麼是市集擺攤？為什麼值得嘗試</a></li>
-      <li><a href="#cost">市集擺攤需要多少錢？費用全解析</a></li>
-      <li><a href="#selection">選品策略：賣什麼才會賺？</a></li>
-      <li><a href="#pricing">定價公式：怎麼訂價才不虧</a></li>
-      <li><a href="#booth">攤位設計：讓人走過來的視覺魔法</a></li>
-      <li><a href="#sales">銷售話術：讓顧客從看看到買單</a></li>
-      <li><a href="#mistakes">新手常犯的 5 大錯誤（附破解法）</a></li>
-      <li><a href="#checklist">出攤前必備清單</a></li>
-      <li><a href="#faq">常見問題 FAQ</a></li>
-    </ol>
+<!-- ② 痛點共鳴 -->
+<section class="lp-section">
+  <div class="lp-inner">
+    <div class="lp-tag">你是不是也有這些困境？</div>
+    <h2 class="lp-h2">擺攤一整天，卻賺不回場租……</h2>
+    <p class="lp-sub">這不是你的問題，是因為沒有人告訴你這套方法。</p>
+    <div class="lp-pain-grid">
+      <div class="lp-pain-card">
+        <span class="lp-pain-icon">🤔</span>
+        <div>
+          <strong>不知道要賣什麼</strong>
+          <p>看別人擺什麼就跟著賣，卻總是賣不動，根本不知道該怎麼選品</p>
+        </div>
+      </div>
+      <div class="lp-pain-card">
+        <span class="lp-pain-icon">💸</span>
+        <div>
+          <strong>定價訂不出來</strong>
+          <p>太高被嫌貴，太低又沒利潤，忙一整天不確定自己有沒有賺錢</p>
+        </div>
+      </div>
+      <div class="lp-pain-card">
+        <span class="lp-pain-icon">😶</span>
+        <div>
+          <strong>顧客走過去不停留</strong>
+          <p>人潮很多，卻沒人走進你的攤位，攤位設計沒特色，顧客一眼就掃過去</p>
+        </div>
+      </div>
+      <div class="lp-pain-card">
+        <span class="lp-pain-icon">🙈</span>
+        <div>
+          <strong>站著不敢開口</strong>
+          <p>看到顧客靠近就緊張，不知道說什麼，等顧客主動問卻等不到</p>
+        </div>
+      </div>
+      <div class="lp-pain-card">
+        <span class="lp-pain-icon">📦</span>
+        <div>
+          <strong>備了一堆貨賣不完</strong>
+          <p>出攤前備了大量存貨，結果賣不出去，錢都壓在庫存裡</p>
+        </div>
+      </div>
+      <div class="lp-pain-card">
+        <span class="lp-pain-icon">📉</span>
+        <div>
+          <strong>每場都靠運氣</strong>
+          <p>有時候賣得好有時候慘，搞不清楚關鍵在哪，下一場還是靠感覺</p>
+        </div>
+      </div>
+    </div>
+    <div class="lp-bridge">💡 這些困境，Ryan 全部遇過——而且全部有系統可以解決。</div>
   </div>
+</section>
 
-  <!-- SECTION 1 -->
-  <article>
-
-  <section class="article-section" id="what-is">
-    <div class="section-number">01</div>
-    <h2 class="section-title">什麼是市集擺攤？為什麼值得嘗試</h2>
-
-    <p>市集擺攤，就是在文創市集、假日市集、社區活動等場合租用一個攤位，現場販售自己的商品或服務。這幾年在台灣各地遍地開花，每個週末都有數十場市集在台北、台中、台南、高雄同步舉辦。</p>
-
-    <p>對很多人來說，市集是<mark>成本最低的創業測試方式</mark>。你不需要租店面、不需要大量囤貨，一個攤位、幾樣商品，就能在真實市場驗證你的產品到底有沒有人買。</p>
-
-    <div class="callout callout-stat">
-      <div class="callout-label">數字說話</div>
-      全台每週末約有 40～80 場文創市集舉辦；攤位租金單日約 $500～$2,000 不等，部分熱門市集需提前 1～3 個月報名，且需通過品牌審核。
-    </div>
-
-    <h3>市集擺攤的 3 大優勢</h3>
-    <ul class="step-list">
-      <li><strong>低成本驗證市場</strong>：一場市集只需幾百元場租，遠比開店省錢，失敗成本極低</li>
-      <li><strong>即時顧客回饋</strong>：當場觀察哪樣商品最受歡迎、顧客停留在哪裡、什麼話術最有效</li>
-      <li><strong>建立品牌認知</strong>：面對面接觸顧客，建立 IG 粉絲、累積口碑，是線下導流線上的絕佳機會</li>
-    </ul>
-  </section>
-
-  <hr class="divider">
-
-  <!-- SECTION 2 -->
-  <section class="article-section" id="cost">
-    <div class="section-number">02</div>
-    <h2 class="section-title">市集擺攤需要多少錢？費用全解析</h2>
-
-    <p>許多新手在還沒出攤前就嚇跑自己，以為擺攤要花很多錢。事實上，如果你懂得規劃，第一場市集的前期投資可以控制在 <mark>$3,000～$8,000 以內</mark>。</p>
-
-    <table class="data-table">
-      <thead>
-        <tr>
-          <th>費用項目</th>
-          <th>低預算</th>
-          <th>一般預算</th>
-          <th>備註</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>攤位租金（單日）</td>
-          <td>$500</td>
-          <td>$1,500</td>
-          <td>依市集知名度而異</td>
-        </tr>
-        <tr>
-          <td>初期商品成本</td>
-          <td>$1,500</td>
-          <td>$4,000</td>
-          <td>建議先少量測試</td>
-        </tr>
-        <tr>
-          <td>攤位佈置道具</td>
-          <td>$500</td>
-          <td>$2,000</td>
-          <td>桌布、展示架等</td>
-        </tr>
-        <tr>
-          <td>包材零錢備用金</td>
-          <td>$300</td>
-          <td>$500</td>
-          <td>零錢 $500 起</td>
-        </tr>
-        <tr>
-          <td><strong>合計</strong></td>
-          <td><strong>約 $2,800</strong></td>
-          <td><strong>約 $8,000</strong></td>
-          <td></td>
-        </tr>
-      </tbody>
-    </table>
-
-    <div class="callout callout-tip">
-      <div class="callout-label">新手建議</div>
-      第一次出攤，商品備貨量不要太多，寧可賣完收攤，也不要大量積貨。少量驗證市場接受度，比押注大量庫存更聰明。
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- SECTION 3 -->
-  <section class="article-section" id="selection">
-    <div class="section-number">03</div>
-    <h2 class="section-title">選品策略：賣什麼才會賺？</h2>
-
-    <p>很多人第一個問題就是：「我要賣什麼？」但這問題問錯了——正確的問法是：<mark>「什麼東西，我有能力做、有利潤空間、而且有市集客群願意買？」</mark></p>
-
-    <h3>選品三角形：興趣 × 資源 × 利潤</h3>
-    <ul class="step-list">
-      <li><strong>你有的興趣與技能</strong>：手作、烘焙、攝影、設計、植栽……你擅長什麼？能持續做的事才走得遠</li>
-      <li><strong>你可取得的資源</strong>：原物料哪裡拿？成本多少？能否穩定供貨？</li>
-      <li><strong>市場有沒有人買</strong>：去觀察幾場市集，看什麼攤位排隊最多、賣最快</li>
-    </ul>
-
-    <h3>市集熱門品類參考</h3>
-    <p>根據近年市集觀察，以下品類在台灣市集普遍有穩定銷量：</p>
-
-    <table class="data-table">
-      <thead>
-        <tr>
-          <th>品類</th>
-          <th>客單價</th>
-          <th>備貨難度</th>
-          <th>競爭程度</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr><td>手工飾品（耳環、項鍊）</td><td>$200–$600</td><td>低</td><td>高</td></tr>
-        <tr><td>手工皮件</td><td>$500–$2,500</td><td>中</td><td>中</td></tr>
-        <tr><td>手作烘焙甜點</td><td>$80–$300</td><td>高</td><td>高</td></tr>
-        <tr><td>插畫印刷品（貼紙、明信片）</td><td>$50–$300</td><td>低</td><td>中</td></tr>
-        <tr><td>香氛蠟燭 / 擴香</td><td>$300–$800</td><td>中</td><td>中</td></tr>
-        <tr><td>植栽 / 多肉</td><td>$100–$500</td><td>中</td><td>低</td></tr>
-      </tbody>
-    </table>
-  </section>
-
-  <hr class="divider">
-
-  <!-- CTA MID 1 -->
-  <div class="cta-mid">
-    <div class="cta-mid-badge">線上課程推薦</div>
-    <h3>不想靠感覺選品？<br>用「系統化公式」找到你最適合賣的東西</h3>
-    <p>「市集擺攤｜從零開始到銷售破萬」課程提供完整的成本利潤計算表和市集評估表，幫你在出攤前就算清楚能不能賺錢。</p>
-    <div class="price-display">
-      <div class="price-original">原價 NT$3,880</div>
-      <div class="price-now">NT$1,380</div>
-      <div class="price-note">限時優惠 · 不限次觀看 · 2.5小時學完</div>
-    </div>
-    <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="btn-primary">立即查看課程內容 →</a>
-    <div class="cta-features">
-      <span>贈 5 張實用表格</span>
-      <span>選品 × 定價 × 話術</span>
-      <span>不限次數回放</span>
+<!-- ③ 承諾結果 -->
+<section class="lp-section-alt">
+  <div class="lp-inner">
+    <div class="lp-tag">學完你能得到什麼</div>
+    <h2 class="lp-h2">一套系統，讓每場市集都有結果</h2>
+    <p class="lp-sub">不是理論，是 Ryan 親身實戰、反覆驗證、50+ 位學員共同印證的方法。</p>
+    <div class="lp-outcomes">
+      <div class="lp-outcome">
+        <div class="lp-out-icon">🎯</div>
+        <div>
+          <strong>精準選品，不靠感覺</strong>
+          <p>用「需求 × 利潤 × 差異化」三步驟篩選商品，出攤前就知道哪個會賣</p>
+        </div>
+      </div>
+      <div class="lp-outcome">
+        <div class="lp-out-icon">💰</div>
+        <div>
+          <strong>定價公式，保住利潤</strong>
+          <p>學會拆解真實成本，建立高中低三層定價策略，讓每筆成交都有利潤</p>
+        </div>
+      </div>
+      <div class="lp-outcome">
+        <div class="lp-out-icon">🛖</div>
+        <div>
+          <strong>攤位設計，3 秒吸引路人停下</strong>
+          <p>掌握高度層次、色彩一致性、動線引導，讓攤位從人群中脫穎而出</p>
+        </div>
+      </div>
+      <div class="lp-outcome">
+        <div class="lp-out-icon">🗣️</div>
+        <div>
+          <strong>銷售話術，把人潮變現金</strong>
+          <p>學會三種開場白、臨門一腳話術、降低猶豫感的成交公式</p>
+        </div>
+      </div>
+      <div class="lp-outcome">
+        <div class="lp-out-icon">📊</div>
+        <div>
+          <strong>數據思維，場場優化</strong>
+          <p>建立銷售紀錄習慣，看懂哪個品項、哪個時段、哪句話最有效，持續進步</p>
+        </div>
+      </div>
+      <div class="lp-outcome">
+        <div class="lp-out-icon">🚀</div>
+        <div>
+          <strong>第一場就能挑戰破萬</strong>
+          <p>不是運氣，是照著步驟執行——50+ 位學員已經做到，你也可以</p>
+        </div>
+      </div>
     </div>
   </div>
+</section>
 
-  <!-- SECTION 4 -->
-  <section class="article-section" id="pricing">
-    <div class="section-number">04</div>
-    <h2 class="section-title">定價公式：怎麼訂價才不虧</h2>
-
-    <p>新手最常犯的錯誤之一：<mark>把成本計算錯了，以為有賺錢，實際上根本沒賺甚至虧損</mark>。定價前，你必須先搞清楚「真實成本」是多少。</p>
-
-    <h3>完整成本計算公式</h3>
-    <div class="callout callout-warn">
-      <div class="callout-label">重要公式</div>
-      <strong>真實成本 = 原物料 + 包材 + 場租攤分 + 交通 + 時間成本</strong><br><br>
-      很多人只算了原物料，卻忘記把場租、交通、自己的工時都算進去，結果「看起來有賺」但實際上時薪不到 $30 元。
-    </div>
-
-    <h3>定價建議倍率</h3>
-    <ul class="step-list">
-      <li><strong>手工製作品</strong>：建議售價為直接成本的 3～5 倍（需涵蓋工時）</li>
-      <li><strong>採購再販品</strong>：建議毛利率至少 50% 以上（進價 × 2 是基本）</li>
-      <li><strong>食品類</strong>：食材成本比例建議控制在 30% 以內</li>
-    </ul>
-
-    <div class="callout callout-tip">
-      <div class="callout-label">實戰技巧</div>
-      定價時先做「高中低」三個價位的商品，高價吸引眼球，低價讓猶豫的人容易下手，中價是你的主力銷售商品。
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- SECTION 5 -->
-  <section class="article-section" id="booth">
-    <div class="section-number">05</div>
-    <h2 class="section-title">攤位設計：讓人走過來的視覺魔法</h2>
-
-    <p>你的攤位有 <mark>不到 3 秒</mark> 吸引路過的人停下腳步。市集上人潮流動快，大部分人是「邊走邊掃描」，只有視覺夠吸引人的攤位，才會讓人決定走近來看。</p>
-
-    <h3>攤位設計 4 大關鍵</h3>
-    <ul class="step-list">
-      <li><strong>高度層次感</strong>：不要把所有商品平鋪在桌上。用展示架、木箱、書架製造高低層次，讓攤位從人群中「長高」，遠遠就能看見</li>
-      <li><strong>一眼看懂你賣什麼</strong>：顧客不應該看了 5 秒還不知道你在賣什麼。放大主力商品的視覺佔比，讓品類清晰</li>
-      <li><strong>色彩一致性</strong>：選定 2～3 個主色，桌布、展示道具、標籤、包材都保持一致，看起來有品牌感</li>
-      <li><strong>動線引導</strong>：讓顧客自然從「入口」掃視到「主力商品」再到「結帳區」，不要讓商品擺放讓人不知道從哪開始看</li>
-    </ul>
-  </section>
-
-  <hr class="divider">
-
-  <!-- SECTION 6 -->
-  <section class="article-section" id="sales">
-    <div class="section-number">06</div>
-    <h2 class="section-title">銷售話術：讓顧客從「看看」到「買單」</h2>
-
-    <p>很多擺攤新手站在攤位後面，等顧客主動問。這是最大的失誤。主動開口、掌握對話節奏，才能把人潮轉換成營業額。</p>
-
-    <h3>開場白的 3 種類型</h3>
-    <ul class="step-list">
-      <li><strong>描述型</strong>：「這是手工製作的天然蜜蠟蠟燭，燃燒時間大約有 40 小時。」——直接說特色，讓人快速理解</li>
-      <li><strong>問句型</strong>：「你是幫自己挑還是要送人？」——引導對話，了解需求</li>
-      <li><strong>情境型</strong>：「這款很多人買回去放在浴室，說洗澡的氛圍整個不一樣。」——幫顧客想像使用情境</li>
-    </ul>
-
-    <div class="callout callout-stat">
-      <div class="callout-label">成交心理學</div>
-      顧客通常在「猶豫」時最需要一句話。最有效的臨門一腳不是催促，而是<strong>降低風險感</strong>：「這個可以先試試看，不喜歡再換另一個款式。」
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- SECTION 7 -->
-  <section class="article-section" id="mistakes">
-    <div class="section-number">07</div>
-    <h2 class="section-title">新手常犯的 5 大錯誤（附破解法）</h2>
-
-    <div class="mistake-grid">
-      <div class="mistake-card">
-        <div class="mistake-header">❌ 錯誤 1：選了人潮最多的市集</div>
-        <div class="mistake-body">
-          新手以為人越多越好，結果場租貴、競爭激烈、顧客期望值高，反而壓力大、成交率低。
-          <div class="mistake-fix">先選中小型市集，客群精準、場租低，是練習話術和攤位設計的最佳場域。</div>
+<!-- ④ 課程內容預覽 -->
+<section class="lp-section">
+  <div class="lp-inner">
+    <div class="lp-tag">課程內容</div>
+    <h2 class="lp-h2">2.5 小時，學完 5 大核心模組</h2>
+    <p class="lp-sub">每個模組都有實作練習與可帶走的表格工具，學完直接用。</p>
+    <div class="lp-modules">
+      <div class="lp-module">
+        <div class="lp-mod-num">01</div>
+        <div>
+          <strong>選品策略與市場驗證</strong>
+          <p>教你找到「真正會賣」的商品，在出攤前先用三步驟篩選驗證，不再靠感覺備貨</p>
         </div>
       </div>
-      <div class="mistake-card">
-        <div class="mistake-header">❌ 錯誤 2：品項太多太雜</div>
-        <div class="mistake-body">
-          把所有商品都搬出來，反而讓顧客選擇困難，最後一樣都不買。
-          <div class="mistake-fix">精選 5～8 個主力 SKU，讓顧客容易做決定。品項少但精，比多而雜更有效。</div>
+      <div class="lp-module">
+        <div class="lp-mod-num">02</div>
+        <div>
+          <strong>成本計算與定價公式</strong>
+          <p>拆解真實成本結構（含工時、場租、包材），建立保護利潤的定價系統</p>
         </div>
       </div>
-      <div class="mistake-card">
-        <div class="mistake-header">❌ 錯誤 3：沒帶足夠零錢</div>
-        <div class="mistake-body">
-          顧客付 $500 買 $180 的東西，你找不開，交易就這樣飛了。
-          <div class="mistake-fix">出攤前準備至少 $1,000 元零錢（含 $10、$50、$100 各鈔），避免尷尬。</div>
+      <div class="lp-module">
+        <div class="lp-mod-num">03</div>
+        <div>
+          <strong>市集準備與攤位設計</strong>
+          <p>從攤位申請、備貨清單到視覺設計，一步一步讓你的攤位讓人走過來</p>
         </div>
       </div>
-      <div class="mistake-card">
-        <div class="mistake-header">❌ 錯誤 4：整場沒有收集顧客資料</div>
-        <div class="mistake-body">
-          在市集買過你東西的人，是最精準的潛在回購客，卻讓他們就這樣走了。
-          <div class="mistake-fix">放 IG QR code、集點卡或小贈品換加 LINE，讓一次性消費變成長期顧客。</div>
+      <div class="lp-module">
+        <div class="lp-mod-num">04</div>
+        <div>
+          <strong>銷售話術與成交心理學</strong>
+          <p>開場白公式、應對猶豫顧客的話術、讓客人自己說服自己的銷售邏輯</p>
         </div>
       </div>
-      <div class="mistake-card">
-        <div class="mistake-header">❌ 錯誤 5：沒有做銷售記錄</div>
-        <div class="mistake-body">
-          每場市集都是數據，但很多人散場就忘了，下一場依然靠感覺。
-          <div class="mistake-fix">用簡單表格記錄：哪個品項賣最好、哪個時段人最多、話術哪句最有效，逐場優化。</div>
+      <div class="lp-module">
+        <div class="lp-mod-num">05</div>
+        <div>
+          <strong>數據追蹤與持續優化</strong>
+          <p>用簡單的銷售紀錄表，讓每場市集都有數據，下一場比上一場更好</p>
         </div>
       </div>
-    </div>
-  </section>
-
-  <hr class="divider">
-
-  <!-- SECTION 8 -->
-  <section class="article-section" id="checklist">
-    <div class="section-number">08</div>
-    <h2 class="section-title">出攤前必備清單</h2>
-    <p>把這份清單截圖存起來，每次出攤前對照確認：</p>
-
-    <ul class="checklist">
-      <li>攤位申請確認、地點與時間確認</li>
-      <li>商品備貨完畢（建議比預期多備 20%）</li>
-      <li>定價標籤貼好（字要大、清楚可見）</li>
-      <li>桌布、展示架、裝飾道具齊全</li>
-      <li>包材：紙袋、貼紙、名片、收據</li>
-      <li>零錢備用金至少 $1,000</li>
-      <li>收款工具：Line Pay、街口、信用卡機</li>
-      <li>IG / 社群 QR Code 立牌</li>
-      <li>個人飲水、食物、椅子</li>
-      <li>雨天備案（防水袋、雨傘）</li>
-      <li>銷售記錄表（或備忘錄 App）</li>
-    </ul>
-  </section>
-
-  <hr class="divider">
-
-  <!-- CTA MID 2 -->
-  <div class="cta-mid">
-    <div class="cta-mid-badge">課程附贈</div>
-    <h3>以上清單都有<br>系統化版本可以直接下載使用</h3>
-    <p>課程附贈「市集準備清單表」、「成本利潤計算表」、「實際銷售紀錄表」等 5 張實用表格，出攤前後都用得到。</p>
-    <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="btn-primary">查看完整課程內容 →</a>
-    <div class="cta-features">
-      <span>5 張表格免費贈</span>
-      <span>2.5 小時影片</span>
-      <span>不限次數回看</span>
+      <div class="lp-module-bonus">課程附贈 5 張即用表格：選品評估表、成本利潤計算表、市集準備清單、銷售紀錄表、話術練習卡</div>
     </div>
   </div>
+</section>
 
-  <!-- SECTION 9 FAQ -->
-  <section class="article-section" id="faq">
-    <div class="section-number">09</div>
-    <h2 class="section-title">市集擺攤常見問題 FAQ</h2>
-
-    <div class="faq-list">
-      <div class="faq-item">
-        <div class="faq-q">沒有手作技能也可以擺攤嗎？</div>
-        <div class="faq-a">可以。市集不是只有手作才能參加。選品採購、代理文創品牌、提供服務（算塔羅、插畫、寵物攝影等）都是可行方向。重點是找到「你能提供的價值」跟「市集客群的需求」交集。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">市集擺攤要怎麼報名？</div>
-        <div class="faq-a">大多數市集透過 Instagram、Facebook 粉絲頁或官網公告徵攤時間。熱門市集通常有審核機制，需提交品牌資料與商品照片。建議追蹤幾個你想參加的市集帳號，在徵攤公告第一時間投遞申請。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">第一次擺攤要帶多少商品？</div>
-        <div class="faq-a">建議備貨量是「你希望賣出量的 1.5 倍」。例如你目標銷售 20 件，備 30 件。太少容易提前售完失去機會，太多則增加搬運負擔和積貨壓力。第一場重在測試，不在衝量。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">天氣不好怎麼辦？可以臨時取消嗎？</div>
-        <div class="faq-a">各市集規定不同，但大多數情況下，場租一旦確認便不退費，且取消可能影響未來報名資格。建議事先準備防水措施（商品防水袋、桌布覆蓋方案），戶外市集下小雨照常進行是常態。</div>
-      </div>
-      <div class="faq-item">
-        <div class="faq-q">擺攤需要辦理營業登記嗎？</div>
-        <div class="faq-a">若是偶發性擺攤，法律上有一定的豁免空間；但若已達到一定規模或頻率，建議諮詢會計師或向國稅局洽詢，以自然人申報收入方式處理。此為法律與稅務問題，建議尋求專業意見。</div>
-      </div>
-    </div>
-  </section>
-
-  </article>
-
-</div><!-- end page-wrap -->
 
 
 <!-- STUDENT TESTIMONIALS -->
@@ -1101,7 +1096,7 @@
 
       <div class="tc-card">
         <div class="tc-avatar-area">
-          <div class="tc-avatar" style="background:linear-gradient(135deg,#c8860a,#e8a020)">C</div>
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#D97443,#E8925A)">C</div>
           <div class="tc-name-block">
             <div class="tc-name">Cindy</div>
             <div class="tc-role">飾品品牌主理人</div>
@@ -1116,7 +1111,7 @@
 
       <div class="tc-card">
         <div class="tc-avatar-area">
-          <div class="tc-avatar" style="background:linear-gradient(135deg,#1a5c57,#2a8c84)">L</div>
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#4A5C35,#607151)">L</div>
           <div class="tc-name-block">
             <div class="tc-name">Leo</div>
             <div class="tc-role">古著攤主</div>
@@ -1146,7 +1141,7 @@
 
       <div class="tc-card">
         <div class="tc-avatar-area">
-          <div class="tc-avatar" style="background:linear-gradient(135deg,#b34a1a,#e06530)">R</div>
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#B85D2A,#D97443)">R</div>
           <div class="tc-name-block">
             <div class="tc-name">Rita</div>
             <div class="tc-role">手環品牌主理人</div>
@@ -1206,7 +1201,7 @@
 
       <div class="tc-card">
         <div class="tc-avatar-area">
-          <div class="tc-avatar" style="background:linear-gradient(135deg,#c8860a,#f0c040)">Y</div>
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#D97443,#E8B870)">Y</div>
           <div class="tc-name-block">
             <div class="tc-name">Yuna</div>
             <div class="tc-role">手作皂創作者</div>
@@ -1236,7 +1231,7 @@
 
       <div class="tc-card">
         <div class="tc-avatar-area">
-          <div class="tc-avatar" style="background:linear-gradient(135deg,#1a5c57,#38a89d)">魚</div>
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#4A5C35,#607151)">魚</div>
           <div class="tc-name-block">
             <div class="tc-name">小魚</div>
             <div class="tc-role">插畫商品設計師</div>
@@ -1368,15 +1363,67 @@
 })();
 </script>
 
-<!-- FINAL CTA -->
-<div class="page-wrap">
-  <div class="final-cta">
-    <h2>準備好出攤了嗎？</h2>
-    <p>「市集擺攤｜從零開始到銷售破萬」——2.5 小時學完全流程<br>選品 × 定價 × 攤位設計 × 銷售話術，一次到位</p>
-    <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="btn-white">立即以 NT$1,380 搶課 →</a>
-    <p style="margin-top:16px; font-size:0.82rem; opacity:0.7;">原價 NT$3,880 · 限時優惠 · 不限次數回看 · 贈 5 張實用表格</p>
+<!-- ⑦ 價格與方案 -->
+<section class="lp-pricing">
+  <div class="lp-price-box">
+    <div class="lp-tag">課程方案</div>
+    <h2 class="lp-h2">一次投資，終身受益</h2>
+    <div class="lp-price-original">原價 NT$3,880</div>
+    <div class="lp-price-current">NT$1,380</div>
+    <div class="lp-price-note">限時優惠 · 一次付費 · 不限次數永久回看</div>
+    <ul class="lp-include-list">
+      <li>2.5 小時完整影音課程</li>
+      <li>5 張即用工作表（選品、成本、清單、銷售記錄、話術）</li>
+      <li>市集類型選擇指南</li>
+      <li>定價公式與利潤計算器</li>
+      <li>電腦、手機隨時看，不限裝置</li>
+    </ul>
+    <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="lp-price-btn">立即以 NT$1,380 報名 →</a>
+    <div class="lp-price-guarantee">在 PressPlay 平台完成付款 · 安全加密 · 付款後立即開課</div>
   </div>
-</div>
+</section>
+
+<!-- ⑧ FAQ -->
+<section class="lp-section" style="background:#fff;">
+  <div class="lp-inner">
+    <div class="lp-tag">常見問題</div>
+    <h2 class="lp-h2">你可能想知道的事</h2>
+    <div class="faq-list">
+      <div class="faq-item">
+        <div class="faq-q">我完全沒有擺攤經驗，這堂課適合我嗎？</div>
+        <div class="faq-a">非常適合！課程從零開始設計，不需要任何擺攤經驗。Ryan 會帶你從「你要賣什麼」開始，一步一步建立完整系統。很多學員都是第一次出攤就達到破萬成績。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">我沒有手作技能，也可以擺攤嗎？</div>
+        <div class="faq-a">當然可以。市集不只有手作品。選品採購、文創代理、飲品、插畫印刷品……只要找到你能提供的價值，就有方法讓它在市集賣出去。課程會教你如何選擇最適合自己的品類。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">課程看一次夠嗎？可以重複看嗎？</div>
+        <div class="faq-a">可以無限次回看，沒有期限限制。建議第一次完整看過，出攤前再針對需要的部分複習。每個模組都可以單獨查找，當作工具書使用。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">NT$1,380 的優惠會結束嗎？</div>
+        <div class="faq-a">這是限時優惠價，原價為 NT$3,880。優惠期間不定時調整，建議現在入手鎖定最低價，避免後悔。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">上完課後如果有問題，可以問嗎？</div>
+        <div class="faq-a">課程在 PressPlay 平台進行，你可以在課程討論區留言提問。Ryan 會定期回覆學員問題，幫你解決出攤前後遇到的實際困境。</div>
+      </div>
+      <div class="faq-item">
+        <div class="faq-q">贈送的 5 張表格怎麼使用？</div>
+        <div class="faq-a">報名後在課程平台可以下載，格式為 Google Sheets 與 PDF，可以直接填寫使用。包含：選品評估表、成本利潤計算表、市集準備清單、銷售紀錄表、話術練習卡，每次出攤前後都用得到。</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ⑨ 最終 CTA -->
+<section class="lp-final">
+  <h2>你距離第一場破萬，只差一個決定</h2>
+  <p>不是運氣，是方法。50+ 位學員已經做到了——<br>現在輪到你。</p>
+  <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="lp-final-btn">立即報名課程 →</a>
+  <div class="lp-final-note">NT$1,380 限時優惠 · 2.5 小時學完 · 贈 5 張實用表格 · 不限次數回看</div>
+</section>
 
 <section id="newsletter" class="newsletter-section">
   <div class="newsletter-inner">

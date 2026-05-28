@@ -10,17 +10,18 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink: #1a1208;
-      --paper: #faf7f2;
-      --cream: #f2ead8;
-      --amber: #c8860a;
-      --amber-light: #e8a020;
-      --amber-pale: #fdf3dc;
-      --rust: #b34a1a;
-      --border: #d4c4a0;
-      --text-muted: #6b5d47;
-      --teal: #0f3d3a;
-      --teal2: #1a5c57;
+      --ink: #4A3525;
+      --paper: #F4EBE1;
+      --cream: #EDE0D4;
+      --amber: #D97443;
+      --amber-light: #E8925A;
+      --amber-pale: #FDF0E8;
+      --rust: #B85D2A;
+      --sage: #607151;
+      --border: #C8B09A;
+      --text-muted: #7A6352;
+      --teal: #4A5C35;
+      --teal2: #607151;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -44,7 +45,7 @@
     .nav-cta:hover { background: var(--rust); }
     @keyframes nav-subscribe-pulse { 0%{transform:scale(1)} 25%{transform:scale(1.08)} 50%{transform:scale(0.96)} 75%{transform:scale(1.05)} 100%{transform:scale(1)} }
     .nav-subscribe { background: var(--ink); color: #fff; padding: 7px 16px; border-radius: 6px; font-size: 0.84rem; font-weight: 700; text-decoration: none; transition: background 0.2s; display: inline-block; }
-    .nav-subscribe:hover { background: #333; animation: nav-subscribe-pulse 0.6s ease-in-out infinite; }
+    .nav-subscribe:hover { background: #5C4035; animation: nav-subscribe-pulse 0.6s ease-in-out infinite; }
     @media (max-width: 480px) { nav { padding: 0 16px; } .nav-center { display: none; } }
 
     /* HERO */
@@ -83,7 +84,7 @@
     .sec-sub-light { color: rgba(255,255,255,0.72); margin-bottom: 36px; }
 
     /* PAIN POINTS */
-    .pain-intro { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 28px 32px; margin-bottom: 32px; font-size: 0.97rem; line-height: 1.9; color: #3d3020; }
+    .pain-intro { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 28px 32px; margin-bottom: 32px; font-size: 0.97rem; line-height: 1.9; color: #3D2A1E; }
     .pain-intro strong { color: var(--rust); }
     .pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
     @media (max-width: 600px) { .pain-grid { grid-template-columns: 1fr; } }
@@ -114,7 +115,7 @@
 
     /* 6 STEPS */
     .steps-list { display: flex; flex-direction: column; gap: 0; position: relative; }
-    .steps-list::before { content:''; position:absolute; left:28px; top:40px; bottom:40px; width:2px; background:linear-gradient(to bottom, var(--amber), rgba(200,134,10,0.1)); }
+    .steps-list::before { content:''; position:absolute; left:28px; top:40px; bottom:40px; width:2px; background:linear-gradient(to bottom, var(--amber), rgba(217,116,67,0.1)); }
     .step-item { display: flex; gap: 24px; align-items: flex-start; padding: 24px 0; }
     .step-circle { flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%; background: var(--amber); color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Noto Serif TC', serif; font-size: 1.3rem; font-weight: 900; z-index: 1; box-shadow: 0 0 0 4px var(--paper); }
     .step-body { flex: 1; padding-top: 8px; }
@@ -163,8 +164,8 @@
     .instructor-avatar { flex-shrink: 0; width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 4px solid var(--amber); }
     .instructor-avatar img { width: 100%; height: 100%; object-fit: cover; }
     .instructor-info h2 { font-family: 'Noto Serif TC', serif; font-size: 1.5rem; font-weight: 900; margin-bottom: 12px; }
-    .instructor-info p { font-size: 0.93rem; color: #3d3020; margin-bottom: 14px; }
-    .instructor-highlight { background: linear-gradient(135deg, rgba(200,134,10,0.1) 0%, rgba(200,134,10,0.05) 100%); border-left: 4px solid var(--amber); border-radius: 0 8px 8px 0; padding: 16px 20px; font-size: 0.9rem; color: var(--ink); margin-bottom: 16px; }
+    .instructor-info p { font-size: 0.93rem; color: #3D2A1E; margin-bottom: 14px; }
+    .instructor-highlight { background: linear-gradient(135deg, rgba(217,116,67,0.1) 0%, rgba(217,116,67,0.05) 100%); border-left: 4px solid var(--amber); border-radius: 0 8px 8px 0; padding: 16px 20px; font-size: 0.9rem; color: var(--ink); margin-bottom: 16px; }
     .instructor-stats { display: flex; gap: 24px; flex-wrap: wrap; }
     .inst-stat { text-align: center; }
     .inst-stat-num { font-family: 'Noto Serif TC', serif; font-size: 1.6rem; font-weight: 900; color: var(--amber); display: block; }
@@ -187,7 +188,7 @@
     .pricing-note { margin-top: 16px; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
 
     /* NEWSLETTER */
-    .newsletter-section { background: linear-gradient(135deg, #0f3d3a 0%, #1a5c57 100%); color: #fff; padding: 80px 24px; }
+    .newsletter-section { background: linear-gradient(135deg, #4A5C35 0%, #607151 100%); color: #fff; padding: 80px 24px; }
     .newsletter-inner { max-width: 680px; margin: 0 auto; text-align: center; }
     .newsletter-tag { display: inline-block; border: 1px solid rgba(255,255,255,0.35); color: rgba(255,255,255,0.7); font-size: 0.7rem; letter-spacing: 0.18em; padding: 4px 14px; text-transform: uppercase; margin-bottom: 16px; }
     .newsletter-section h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 900; margin-bottom: 12px; line-height: 1.4; }
@@ -197,8 +198,8 @@
     .form-row input { flex: 1; min-width: 180px; max-width: 240px; padding: 14px 18px; border-radius: 8px; font-size: 0.95rem; font-family: inherit; outline: none; background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.25); }
     .form-row input::placeholder { color: rgba(255,255,255,0.5); }
     .form-row input:focus { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.5); }
-    .form-row button { background: #f5a623; color: #fff; border: none; border-radius: 8px; padding: 14px 28px; font-size: 0.97rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
-    .form-row button:hover { background: #e09010; transform: translateY(-1px); }
+    .form-row button { background: #D97443; color: #fff; border: none; border-radius: 8px; padding: 14px 28px; font-size: 0.97rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .form-row button:hover { background: #B85D2A; transform: translateY(-1px); }
     .form-disclaimer { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
     @media (max-width: 520px) { .form-row { flex-direction: column; align-items: stretch; } .form-row input { max-width: 100%; } }
 
@@ -520,36 +521,6 @@
       <span class="badge">達 1,000 名</span>
       <span class="badge2">一對一諮詢 抽 3 名</span>
       <p>如果你有想要報名市集，或是正在準備參加市集者，購課後有機會獲得最佳切身諮詢機會。</p>
-    </div>
-  </div>
-</section>
-
-<!-- INSTRUCTOR -->
-<section class="section">
-  <div class="inner">
-    <div class="sec-tag">關於講師</div>
-    <h2 class="sec-title">Hi，我是 Ryan</h2>
-    <div class="instructor-wrap">
-      <div class="instructor-avatar">
-        <img src="https://static.pressplay.cc/static/uploads/enh_author/033EFB7D88E14E79DFC9997571B7A808/c1ddad648076dce4766c63dc5d896c6e_resized.jpg" alt="斜槓創業家 Ryan">
-      </div>
-      <div class="instructor-info">
-        <p>目前是市集新式飲料品牌 <strong>"FruitBro"</strong> — 新鮮水果茶的主理人，也是位斜槓創業家，參與過多種類型市集創業實戰，並有超過 20 場市集銷售「破萬元」以上的好成績。</p>
-        <div class="instructor-highlight">
-          累積指導超過 50 位學員成功擺攤與提升銷售表現，課程方法經實戰驗證，有效幫助學員達成單場破萬的成果。從第一次擺攤的緊張與陌生，到參與多場市集後逐步累積經驗，我一路走過產品選品、市場地位、定價、攤位設計到顧客互動，每一步都親自實戰，從零開始打造副業品牌。
-        </div>
-        <ul class="instructor-bullets">
-          <li>參與超過 30 場以上的市集活動，超過 20 場單日銷售「破萬元」</li>
-          <li>10 場以上達成現場「提前完售」的銷售表現</li>
-          <li>2 次成功入選臺北市青年局舉辦《斜槓自由市》市集品牌</li>
-          <li>將市集經驗系統化整理，幫助 50+ 位學員成功複製</li>
-        </ul>
-        <div class="instructor-stats" style="margin-top:20px">
-          <div class="inst-stat"><span class="inst-stat-num">30+</span><span class="inst-stat-label">累積出攤場次</span></div>
-          <div class="inst-stat"><span class="inst-stat-num">20+</span><span class="inst-stat-label">單日破萬</span></div>
-          <div class="inst-stat"><span class="inst-stat-num">50+</span><span class="inst-stat-label">指導學員</span></div>
-        </div>
-      </div>
     </div>
   </div>
 </section>

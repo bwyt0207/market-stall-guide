@@ -10,15 +10,16 @@
   <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
   <style>
     :root {
-      --ink: #1a1208;
-      --paper: #faf7f2;
-      --cream: #f2ead8;
-      --amber: #c8860a;
-      --amber-light: #e8a020;
-      --amber-pale: #fdf3dc;
-      --rust: #b34a1a;
-      --border: #d4c4a0;
-      --text-muted: #6b5d47;
+      --ink: #4A3525;
+      --paper: #F4EBE1;
+      --cream: #EDE0D4;
+      --amber: #D97443;
+      --amber-light: #E8925A;
+      --amber-pale: #FDF0E8;
+      --rust: #B85D2A;
+      --sage: #607151;
+      --border: #C8B09A;
+      --text-muted: #7A6352;
     }
     * { margin: 0; padding: 0; box-sizing: border-box; }
     html { scroll-behavior: smooth; }
@@ -60,7 +61,7 @@
       text-decoration: none; transition: background 0.2s; display: inline-block;
     }
     .nav-subscribe:hover {
-      background: #333;
+      background: #5C4035;
       animation: nav-subscribe-pulse 0.6s ease-in-out infinite;
     }
 
@@ -75,7 +76,7 @@
       text-transform: uppercase; margin-bottom: 20px;
     }
     .blog-hero h1 { font-family: 'Noto Serif TC', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; margin-bottom: 12px; }
-    .blog-hero p { color: #c8bda8; font-size: 0.95rem; }
+    .blog-hero p { color: #C4AFA0; font-size: 0.95rem; }
 
     /* FILTER TABS */
     .filter-wrap { background: #fff; border-bottom: 1px solid var(--border); padding: 0 24px; position: sticky; top: 57px; z-index: 90; }
@@ -103,9 +104,9 @@
     .card-banner {
       height: 6px;
     }
-    .card-banner.cost   { background: linear-gradient(90deg, #c8860a, #e8a020); }
-    .card-banner.prep   { background: linear-gradient(90deg, #5a7a5a, #7aaa7a); }
-    .card-banner.product { background: linear-gradient(90deg, #b34a1a, #d4621a); }
+    .card-banner.cost   { background: linear-gradient(90deg, #D97443, #E8925A); }
+    .card-banner.prep   { background: linear-gradient(90deg, #607151, #7A9264); }
+    .card-banner.product { background: linear-gradient(90deg, #B85D2A, #D97443); }
 
     .card-body { display: flex; gap: 20px; padding: 22px 24px 0; }
     .card-icon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
@@ -115,7 +116,7 @@
       text-transform: uppercase; padding: 3px 10px; border-radius: 20px;
       background: var(--amber-pale); color: var(--amber); margin-bottom: 8px;
     }
-    .card-tag.green { background: #edf5ed; color: #5a7a5a; }
+    .card-tag.green { background: #EDF3EA; color: #607151; }
     .card-tag.rust  { background: #fdf0eb; color: var(--rust); }
     .card-title { font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: 1.1rem; color: var(--ink); line-height: 1.5; margin-bottom: 8px; }
     .card-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.75; }
@@ -149,7 +150,7 @@
 
     /* NEWSLETTER */
     .newsletter-section {
-      background: linear-gradient(135deg, #0f3d3a 0%, #1a5c57 100%);
+      background: linear-gradient(135deg, #4A5C35 0%, #607151 100%);
       color: #fff; padding: 80px 24px;
     }
     .newsletter-inner { max-width: 680px; margin: 0 auto; text-align: center; }
@@ -175,11 +176,11 @@
     .form-row input::placeholder { color: rgba(255,255,255,0.5); }
     .form-row input:focus { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.5); }
     .form-row button {
-      background: #f5a623; color: #fff; border: none; border-radius: 8px;
+      background: #D97443; color: #fff; border: none; border-radius: 8px;
       padding: 14px 28px; font-size: 0.97rem; font-weight: 700; cursor: pointer;
       font-family: inherit; transition: background 0.2s, transform 0.15s; white-space: nowrap;
     }
-    .form-row button:hover { background: #e09010; transform: translateY(-1px); }
+    .form-row button:hover { background: #B85D2A; transform: translateY(-1px); }
     .form-disclaimer { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
     @media (max-width: 520px) { .form-row { flex-direction: column; align-items: stretch; } .form-row input { max-width: 100%; } }
 
