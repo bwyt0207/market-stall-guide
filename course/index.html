@@ -1,0 +1,616 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>市集擺攤：從零開始到銷售破萬｜線上課程</title>
+  <meta name="description" content="零基礎也能上手！帶你用低成本快速打造成功攤位，從選品、定價、攤位設計到銷售話術，一場市集就能挑戰銷售破萬。">
+  <link rel="canonical" href="https://bwyt0207.github.io/market-stall-guide/course/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1208;
+      --paper: #faf7f2;
+      --cream: #f2ead8;
+      --amber: #c8860a;
+      --amber-light: #e8a020;
+      --amber-pale: #fdf3dc;
+      --rust: #b34a1a;
+      --border: #d4c4a0;
+      --text-muted: #6b5d47;
+      --teal: #0f3d3a;
+      --teal2: #1a5c57;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--paper); color: var(--ink); font-family: 'Noto Sans TC', sans-serif; line-height: 1.8; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: #fff; border-bottom: 1px solid var(--border);
+      padding: 0 32px; display: flex; justify-content: space-between; align-items: center;
+      height: 60px; box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .nav-logo { font-family: 'Noto Serif TC', serif; font-weight: 900; font-size: 1.05rem; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .nav-logo-icon { font-size: 1.3rem; }
+    .nav-center { display: flex; gap: 4px; align-items: center; }
+    .nav-center a { color: var(--text-muted); text-decoration: none; font-size: 0.88rem; font-weight: 500; padding: 6px 14px; border-radius: 6px; transition: color 0.15s, background 0.15s; }
+    .nav-center a:hover { color: var(--ink); background: var(--cream); }
+    .nav-center a.active { color: var(--amber); font-weight: 700; }
+    .nav-right { display: flex; gap: 10px; align-items: center; }
+    .nav-cta { background: var(--amber); color: #fff; padding: 7px 16px; border-radius: 6px; font-size: 0.84rem; font-weight: 700; text-decoration: none; transition: background 0.2s; }
+    .nav-cta:hover { background: var(--rust); }
+    @keyframes nav-subscribe-pulse { 0%{transform:scale(1)} 25%{transform:scale(1.08)} 50%{transform:scale(0.96)} 75%{transform:scale(1.05)} 100%{transform:scale(1)} }
+    .nav-subscribe { background: var(--ink); color: #fff; padding: 7px 16px; border-radius: 6px; font-size: 0.84rem; font-weight: 700; text-decoration: none; transition: background 0.2s; display: inline-block; }
+    .nav-subscribe:hover { background: #333; animation: nav-subscribe-pulse 0.6s ease-in-out infinite; }
+    @media (max-width: 480px) { nav { padding: 0 16px; } .nav-center { display: none; } }
+
+    /* HERO */
+    .hero {
+      background: linear-gradient(135deg, var(--ink) 0%, #2d1f0a 100%);
+      color: var(--paper); padding: 80px 24px 72px; text-align: center;
+    }
+    .hero-badge { display: inline-block; border: 1px solid var(--amber); color: var(--amber-light); font-size: 0.72rem; letter-spacing: 0.15em; padding: 4px 16px; text-transform: uppercase; margin-bottom: 20px; }
+    .hero h1 { font-family: 'Noto Serif TC', serif; font-size: clamp(1.8rem, 4.5vw, 3rem); font-weight: 900; line-height: 1.3; margin-bottom: 20px; }
+    .hero h1 em { color: var(--amber-light); font-style: normal; }
+    .hero-sub { color: #c8bda8; font-size: 1.05rem; max-width: 580px; margin: 0 auto 36px; }
+    .hero-cta { display: inline-block; background: var(--amber); color: #fff; font-weight: 900; font-size: 1.1rem; padding: 16px 40px; border-radius: 10px; text-decoration: none; transition: background 0.2s, transform 0.15s; }
+    .hero-cta:hover { background: var(--amber-light); transform: translateY(-2px); }
+    .hero-price { margin-top: 12px; font-size: 0.88rem; color: rgba(255,255,255,0.55); }
+    .hero-price strong { color: var(--amber-light); font-size: 1.1rem; }
+
+    /* STATS BAR */
+    .stats-bar { background: var(--amber); color: #fff; display: flex; justify-content: center; flex-wrap: wrap; }
+    .stat-item { padding: 18px 32px; text-align: center; border-right: 1px solid rgba(255,255,255,0.25); }
+    .stat-item:last-child { border-right: none; }
+    .stat-icon { font-size: 1.2rem; display: block; margin-bottom: 2px; }
+    .stat-label { font-size: 0.82rem; opacity: 0.9; display: block; }
+    .stat-val { font-weight: 700; font-size: 0.95rem; display: block; }
+    @media (max-width: 600px) { .stat-item { padding: 12px 18px; } }
+
+    /* SECTIONS */
+    .section { padding: 64px 24px; }
+    .section-alt { background: var(--cream); }
+    .section-dark { background: var(--teal); color: var(--paper); }
+    .inner { max-width: 800px; margin: 0 auto; }
+    .inner-wide { max-width: 960px; margin: 0 auto; }
+    .sec-tag { display: inline-block; border: 1px solid var(--amber); color: var(--amber); font-size: 0.68rem; letter-spacing: 0.18em; padding: 3px 12px; text-transform: uppercase; margin-bottom: 12px; }
+    .sec-tag-light { border-color: rgba(255,255,255,0.4); color: rgba(255,255,255,0.7); }
+    .sec-title { font-family: 'Noto Serif TC', serif; font-size: clamp(1.5rem, 3vw, 2rem); font-weight: 900; margin-bottom: 16px; }
+    .sec-sub { color: var(--text-muted); font-size: 0.97rem; margin-bottom: 36px; }
+    .sec-sub-light { color: rgba(255,255,255,0.72); margin-bottom: 36px; }
+
+    /* PAIN POINTS */
+    .pain-intro { background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 28px 32px; margin-bottom: 32px; font-size: 0.97rem; line-height: 1.9; color: #3d3020; }
+    .pain-intro strong { color: var(--rust); }
+    .pain-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; margin-bottom: 32px; }
+    @media (max-width: 600px) { .pain-grid { grid-template-columns: 1fr; } }
+    .pain-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px; }
+    .pain-card h4 { color: var(--rust); font-size: 0.97rem; margin-bottom: 6px; }
+    .pain-card p { font-size: 0.87rem; color: var(--text-muted); margin: 0; }
+    .pain-promise { background: linear-gradient(135deg, var(--teal) 0%, var(--teal2) 100%); border-radius: 12px; padding: 28px 32px; color: #fff; }
+    .pain-promise h3 { font-family: 'Noto Serif TC', serif; font-size: 1.2rem; margin-bottom: 16px; color: var(--amber-light); }
+    .checklist { list-style: none; display: flex; flex-direction: column; gap: 10px; }
+    .checklist li { display: flex; gap: 10px; font-size: 0.93rem; }
+    .checklist li::before { content: '✓'; color: var(--amber-light); font-weight: 900; flex-shrink: 0; }
+    .result-list { margin-top: 20px; padding-top: 20px; border-top: 1px solid rgba(255,255,255,0.2); display: flex; flex-direction: column; gap: 6px; font-size: 0.93rem; color: rgba(255,255,255,0.85); }
+
+    /* WHAT YOU LEARN */
+    .learn-grid { display: flex; flex-direction: column; gap: 16px; }
+    .learn-item { display: flex; gap: 20px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 20px 24px; }
+    .learn-num { flex-shrink: 0; width: 36px; height: 36px; border-radius: 50%; background: var(--amber); color: #fff; display: flex; align-items: center; justify-content: center; font-weight: 900; font-size: 0.9rem; margin-top: 2px; }
+    .learn-item h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .learn-item p { font-size: 0.88rem; color: var(--text-muted); margin: 0; }
+
+    /* OUTCOMES GRID */
+    .outcomes-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    @media (max-width: 580px) { .outcomes-grid { grid-template-columns: 1fr; } }
+    .outcome-card { background: #fff; border-radius: 12px; border: 1px solid var(--border); padding: 20px; }
+    .outcome-icon { font-size: 1.6rem; margin-bottom: 8px; display: block; }
+    .outcome-card h3 { font-size: 0.97rem; font-weight: 700; margin-bottom: 6px; color: var(--rust); }
+    .outcome-card p { font-size: 0.86rem; color: var(--text-muted); margin: 0; }
+
+    /* 6 STEPS */
+    .steps-list { display: flex; flex-direction: column; gap: 0; position: relative; }
+    .steps-list::before { content:''; position:absolute; left:28px; top:40px; bottom:40px; width:2px; background:linear-gradient(to bottom, var(--amber), rgba(200,134,10,0.1)); }
+    .step-item { display: flex; gap: 24px; align-items: flex-start; padding: 24px 0; }
+    .step-circle { flex-shrink: 0; width: 56px; height: 56px; border-radius: 50%; background: var(--amber); color: #fff; display: flex; align-items: center; justify-content: center; font-family: 'Noto Serif TC', serif; font-size: 1.3rem; font-weight: 900; z-index: 1; box-shadow: 0 0 0 4px var(--paper); }
+    .step-body { flex: 1; padding-top: 8px; }
+    .step-body h3 { font-size: 1.05rem; font-weight: 700; margin-bottom: 6px; color: var(--ink); }
+    .step-body p { font-size: 0.9rem; color: var(--text-muted); margin: 0; }
+    .step-note { background: var(--amber-pale); border-left: 3px solid var(--amber); border-radius: 0 8px 8px 0; padding: 12px 16px; margin-top: 16px; font-size: 0.85rem; color: var(--ink); font-style: italic; }
+
+    /* WHO IS THIS FOR */
+    .who-grid { display: grid; grid-template-columns: 1fr 1fr 1fr; gap: 16px; }
+    @media (max-width: 680px) { .who-grid { grid-template-columns: 1fr 1fr; } }
+    @media (max-width: 400px) { .who-grid { grid-template-columns: 1fr; } }
+    .who-card { background: rgba(255,255,255,0.08); border: 1px solid rgba(255,255,255,0.15); border-radius: 12px; padding: 20px; }
+    .who-card .emoji { font-size: 1.8rem; display: block; margin-bottom: 10px; }
+    .who-card h3 { font-size: 0.95rem; font-weight: 700; margin-bottom: 6px; color: #fff; }
+    .who-card p { font-size: 0.83rem; color: rgba(255,255,255,0.7); margin: 0; }
+
+    /* FEATURES */
+    .features-list { display: flex; flex-direction: column; gap: 16px; }
+    .feature-card { display: flex; gap: 20px; align-items: flex-start; background: #fff; border: 1px solid var(--border); border-radius: 12px; padding: 20px 24px; }
+    .feature-icon { flex-shrink: 0; width: 48px; height: 48px; border-radius: 12px; background: var(--rust); display: flex; align-items: center; justify-content: center; font-size: 1.3rem; }
+    .feature-card h3 { font-size: 1rem; font-weight: 700; margin-bottom: 4px; }
+    .feature-card p { font-size: 0.88rem; color: var(--text-muted); margin: 0; }
+
+    /* COURSE INFO */
+    .info-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 12px; }
+    @media (max-width: 520px) { .info-grid { grid-template-columns: 1fr; } }
+    .info-item { display: flex; gap: 14px; align-items: center; background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 14px 18px; }
+    .info-icon { font-size: 1.3rem; flex-shrink: 0; }
+    .info-label { font-size: 0.72rem; color: var(--text-muted); display: block; }
+    .info-val { font-size: 0.93rem; font-weight: 700; color: var(--ink); display: block; }
+
+    /* BONUSES */
+    .bonus-table { width: 100%; border-collapse: collapse; background: #fff; border-radius: 12px; overflow: hidden; border: 1px solid var(--border); }
+    .bonus-table th { background: var(--rust); color: #fff; padding: 14px 20px; text-align: left; font-size: 0.88rem; }
+    .bonus-table td { padding: 14px 20px; border-bottom: 1px solid var(--border); font-size: 0.9rem; vertical-align: top; }
+    .bonus-table tr:last-child td { border-bottom: none; }
+    .bonus-table td:first-child { font-weight: 700; color: var(--rust); width: 35%; }
+    .bonus-special { margin-top: 20px; background: linear-gradient(135deg, #4a2f9e 0%, #6a45c8 100%); border-radius: 12px; padding: 24px 28px; color: #fff; display: flex; gap: 20px; align-items: center; flex-wrap: wrap; }
+    .bonus-special .badge { background: #000; color: #fff; border-radius: 20px; padding: 6px 16px; font-size: 0.88rem; font-weight: 700; white-space: nowrap; }
+    .bonus-special .badge2 { background: #4caf50; color: #fff; border-radius: 20px; padding: 6px 16px; font-size: 0.88rem; font-weight: 700; white-space: nowrap; }
+    .bonus-special p { font-size: 0.88rem; color: rgba(255,255,255,0.85); margin: 8px 0 0; flex-basis: 100%; }
+
+    /* INSTRUCTOR */
+    .instructor-wrap { display: flex; gap: 40px; align-items: flex-start; }
+    @media (max-width: 600px) { .instructor-wrap { flex-direction: column; gap: 24px; } }
+    .instructor-avatar { flex-shrink: 0; width: 120px; height: 120px; border-radius: 50%; overflow: hidden; border: 4px solid var(--amber); }
+    .instructor-avatar img { width: 100%; height: 100%; object-fit: cover; }
+    .instructor-info h2 { font-family: 'Noto Serif TC', serif; font-size: 1.5rem; font-weight: 900; margin-bottom: 12px; }
+    .instructor-info p { font-size: 0.93rem; color: #3d3020; margin-bottom: 14px; }
+    .instructor-highlight { background: linear-gradient(135deg, rgba(200,134,10,0.1) 0%, rgba(200,134,10,0.05) 100%); border-left: 4px solid var(--amber); border-radius: 0 8px 8px 0; padding: 16px 20px; font-size: 0.9rem; color: var(--ink); margin-bottom: 16px; }
+    .instructor-stats { display: flex; gap: 24px; flex-wrap: wrap; }
+    .inst-stat { text-align: center; }
+    .inst-stat-num { font-family: 'Noto Serif TC', serif; font-size: 1.6rem; font-weight: 900; color: var(--amber); display: block; }
+    .inst-stat-label { font-size: 0.75rem; color: var(--text-muted); }
+    .instructor-bullets { list-style: none; display: flex; flex-direction: column; gap: 6px; margin-top: 16px; }
+    .instructor-bullets li { font-size: 0.88rem; color: var(--text-muted); display: flex; gap: 8px; }
+    .instructor-bullets li::before { content: '⭐'; flex-shrink: 0; }
+
+    /* PRICING CTA */
+    .pricing-box { background: linear-gradient(135deg, var(--amber) 0%, var(--rust) 100%); border-radius: 20px; padding: 56px 40px; text-align: center; color: #fff; }
+    .pricing-box h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(1.5rem, 3vw, 2.2rem); font-weight: 900; margin-bottom: 12px; }
+    .pricing-box > p { color: rgba(255,255,255,0.85); margin-bottom: 8px; font-size: 0.97rem; }
+    .pricing-original { font-size: 0.95rem; color: rgba(255,255,255,0.55); text-decoration: line-through; margin-bottom: 4px; }
+    .pricing-current { font-size: 2.6rem; font-weight: 900; font-family: 'Noto Serif TC', serif; margin: 8px 0 24px; }
+    .pricing-perks { display: flex; justify-content: center; gap: 20px; flex-wrap: wrap; margin-bottom: 28px; }
+    .pricing-perk { font-size: 0.82rem; color: rgba(255,255,255,0.8); display: flex; gap: 6px; align-items: center; }
+    .pricing-perk::before { content: '✓'; font-weight: 900; color: #fff; }
+    .pricing-btn { display: inline-block; background: #fff; color: var(--rust); font-weight: 900; font-size: 1.1rem; padding: 18px 48px; border-radius: 12px; text-decoration: none; transition: transform 0.15s, box-shadow 0.15s; }
+    .pricing-btn:hover { transform: translateY(-3px); box-shadow: 0 12px 32px rgba(0,0,0,0.2); }
+    .pricing-note { margin-top: 16px; font-size: 0.78rem; color: rgba(255,255,255,0.5); }
+
+    /* NEWSLETTER */
+    .newsletter-section { background: linear-gradient(135deg, #0f3d3a 0%, #1a5c57 100%); color: #fff; padding: 80px 24px; }
+    .newsletter-inner { max-width: 680px; margin: 0 auto; text-align: center; }
+    .newsletter-tag { display: inline-block; border: 1px solid rgba(255,255,255,0.35); color: rgba(255,255,255,0.7); font-size: 0.7rem; letter-spacing: 0.18em; padding: 4px 14px; text-transform: uppercase; margin-bottom: 16px; }
+    .newsletter-section h2 { font-family: 'Noto Serif TC', serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 900; margin-bottom: 12px; line-height: 1.4; }
+    .newsletter-section .newsletter-inner > p { color: rgba(255,255,255,0.72); font-size: 0.97rem; margin-bottom: 36px; }
+    .newsletter-form { width: 100%; }
+    .form-row { display: flex; gap: 10px; flex-wrap: wrap; justify-content: center; margin-bottom: 14px; }
+    .form-row input { flex: 1; min-width: 180px; max-width: 240px; padding: 14px 18px; border-radius: 8px; font-size: 0.95rem; font-family: inherit; outline: none; background: rgba(255,255,255,0.12); color: #fff; border: 1px solid rgba(255,255,255,0.25); }
+    .form-row input::placeholder { color: rgba(255,255,255,0.5); }
+    .form-row input:focus { background: rgba(255,255,255,0.18); border-color: rgba(255,255,255,0.5); }
+    .form-row button { background: #f5a623; color: #fff; border: none; border-radius: 8px; padding: 14px 28px; font-size: 0.97rem; font-weight: 700; cursor: pointer; font-family: inherit; transition: background 0.2s, transform 0.15s; white-space: nowrap; }
+    .form-row button:hover { background: #e09010; transform: translateY(-1px); }
+    .form-disclaimer { font-size: 0.78rem; color: rgba(255,255,255,0.45); }
+    @media (max-width: 520px) { .form-row { flex-direction: column; align-items: stretch; } .form-row input { max-width: 100%; } }
+
+    footer { text-align: center; padding: 32px; color: var(--text-muted); font-size: 0.82rem; border-top: 1px solid var(--border); }
+    footer a { color: var(--amber); text-decoration: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/market-stall-guide/" class="nav-logo"><span class="nav-logo-icon">⛺</span>市集擺攤指南</a>
+  <div class="nav-center">
+    <a href="/market-stall-guide/about/">關於我們</a>
+    <a href="/market-stall-guide/blog/">市集擺攤 Blog</a>
+    <a href="/market-stall-guide/course/" class="active">線上課程</a>
+  </div>
+  <div class="nav-right">
+    <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="nav-cta">🎯 立即看課程</a>
+    <a href="#newsletter" class="nav-subscribe">📧 訂閱電子報</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-badge">線上課程 · 隨時學習</div>
+  <h1>市集擺攤｜<em>從零開始到銷售破萬</em></h1>
+  <p class="hero-sub">零基礎也能上手！帶你用低成本快速打造成功攤位<br>選品 × 定價 × 攤位設計 × 銷售話術，一場市集就挑戰破萬！</p>
+  <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="hero-cta">立即報名課程 →</a>
+  <p class="hero-price">限時優惠 <strong>NT$1,380</strong>（原價 NT$3,880）· 不限次數回看</p>
+</section>
+
+<!-- STATS BAR -->
+<div class="stats-bar">
+  <div class="stat-item"><span class="stat-icon">🎬</span><span class="stat-label">影音總長</span><span class="stat-val">約 2.5 小時</span></div>
+  <div class="stat-item"><span class="stat-icon">📋</span><span class="stat-label">學習教材</span><span class="stat-val">5 份表格</span></div>
+  <div class="stat-item"><span class="stat-icon">♾️</span><span class="stat-label">觀看限制</span><span class="stat-val">不限時間次數</span></div>
+  <div class="stat-item"><span class="stat-icon">📱</span><span class="stat-label">可用裝置</span><span class="stat-val">電腦 · 手機</span></div>
+  <div class="stat-item"><span class="stat-icon">💳</span><span class="stat-label">收費方式</span><span class="stat-val">一次收費</span></div>
+</div>
+
+<!-- PAIN POINTS -->
+<section class="section">
+  <div class="inner">
+    <div class="sec-tag">你也有這些困境嗎？</div>
+    <h2 class="sec-title">第一次想擺攤卻不知從何開始，<br>或是擺過幾次卻總是賣不動？</h2>
+    <div class="pain-grid">
+      <div class="pain-card">
+        <h4>😓 市集擺攤銷售不佳？</h4>
+        <p>為什麼別人一場市集就能破萬，你卻怎麼做都賺不起來，連場租都回不來？</p>
+      </div>
+      <div class="pain-card">
+        <h4>😰 怕投入太多資金風險太高？</h4>
+        <p>擔心一開始投入太多成本，市場卻不買單，導致副業還沒開始就承受龐大壓力。</p>
+      </div>
+      <div class="pain-card">
+        <h4>🤔 如何選品跟定價？</h4>
+        <p>不知道該賣什麼才會有人買？定價太高被嫌貴，太低又沒利潤，辛苦一天卻白忙一場。</p>
+      </div>
+      <div class="pain-card">
+        <h4>😶 成交率低攤位不吸睛？</h4>
+        <p>攤位沒有特色顧客不願停留，面對顧客又不敢開口，只能眼睜睜看著生意溜走。</p>
+      </div>
+    </div>
+    <div class="pain-promise">
+      <h3>👉 別擔心！《市集擺攤：從零開始到銷售破萬》帶你解決這一切</h3>
+      <ul class="checklist">
+        <li>選品與市場驗證：找到真正會賣的商品</li>
+        <li>成本利潤計算：學會拆解成本，看懂利潤</li>
+        <li>定價公式：用低成本策略，保證利潤</li>
+        <li>市集準備與攤位設計：讓顧客願意停下來</li>
+        <li>銷售話術與成交公式：把人潮變成現金</li>
+        <li>案例分享與實作任務：少走彎路，快速見效</li>
+      </ul>
+      <div class="result-list">
+        <div>🔥 學完後，你將能：</div>
+        <div>· 第一次就敢上手，不再怕失敗</div>
+        <div>· 擺脫「人潮有卻沒成交」的窘境</div>
+        <div>· 用小成本測試市場，創造真正的收入</div>
+        <div>· 一場市集就能挑戰 <strong style="color:var(--amber-light)">銷售破萬！</strong></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- WHAT YOU LEARN -->
+<section class="section section-alt">
+  <div class="inner">
+    <div class="sec-tag">課程內容</div>
+    <h2 class="sec-title">你可以學到</h2>
+    <div class="learn-grid">
+      <div class="learn-item">
+        <div class="learn-num">1</div>
+        <div>
+          <h3>市場定位及選品方法</h3>
+          <p>掌握市場洞察需求 → 興趣＋資源 → 利潤的思維，找到產品在市場的差異化及適合的副業商品。</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">2</div>
+        <div>
+          <h3>產品定價與利潤計算</h3>
+          <p>學會產品定價、建立成本結構與利潤模型，設計能持續獲利的商品價格。</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">3</div>
+        <div>
+          <h3>市集擺攤實作與銷售互動技巧</h3>
+          <p>學會市集攤位設計、動線規劃與顧客話術，吸引人潮停留並提升成交率。</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">4</div>
+        <div>
+          <h3>市集選擇策略</h3>
+          <p>懂得評估市集類型、區域與客群，找到最適合自己產品的場地。</p>
+        </div>
+      </div>
+      <div class="learn-item">
+        <div class="learn-num">5</div>
+        <div>
+          <h3>市集準備技巧</h3>
+          <p>從市集資訊收集及報名流程、設備清單到收款工具，完整掌握出攤必備 Know-how。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- OUTCOMES -->
+<section class="section">
+  <div class="inner">
+    <div class="sec-tag">學習成果</div>
+    <h2 class="sec-title">學完這堂課，你就可以</h2>
+    <div class="outcomes-grid">
+      <div class="outcome-card">
+        <span class="outcome-icon">🏆</span>
+        <h3>挑戰單場銷售破萬</h3>
+        <p>把人潮轉換為真實收入，為你的市集副業打下第一個成功里程碑。</p>
+      </div>
+      <div class="outcome-card">
+        <span class="outcome-icon">🎯</span>
+        <h3>精準產品定位</h3>
+        <p>掌握市場需求，挑選對的商品，找到真正會買單的顧客。</p>
+      </div>
+      <div class="outcome-card">
+        <span class="outcome-icon">💰</span>
+        <h3>抓準定價公式</h3>
+        <p>清楚計算成本與毛利，避免做工卻沒有獲利。</p>
+      </div>
+      <div class="outcome-card">
+        <span class="outcome-icon">📋</span>
+        <h3>市集評估與準備</h3>
+        <p>掌握市場評估、準備清單、設備與流程，安心參加適合你的市集。</p>
+      </div>
+      <div class="outcome-card">
+        <span class="outcome-icon">⛺</span>
+        <h3>打造吸睛攤位</h3>
+        <p>打造吸引人的攤位，注意擺放細節，讓顧客願意停下來看。</p>
+      </div>
+      <div class="outcome-card">
+        <span class="outcome-icon">💬</span>
+        <h3>掌握成交話術</h3>
+        <p>學會互動技巧，把顧客從「看看」轉化成「買單」。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 6 STEPS -->
+<section class="section section-alt">
+  <div class="inner">
+    <div class="sec-tag">課程架構</div>
+    <h2 class="sec-title">市集擺攤從零到破萬：6 大步驟</h2>
+    <p class="sec-sub">系統化帶你走完全流程，不再靠運氣，靠方法！</p>
+    <div class="steps-list">
+      <div class="step-item">
+        <div class="step-circle">1</div>
+        <div class="step-body">
+          <h3>找到市場定位與選品方向</h3>
+          <p>確定你的顧客是誰，透過需求、興趣＋資源、利潤三大思維，找到最適合的副業商品，打造產品差異化。</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">2</div>
+        <div class="step-body">
+          <h3>定價與利潤規劃</h3>
+          <p>掌握成本結構，學會計算合理利潤，用正確定價策略避免價格戰，讓副業能長久經營。</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">3</div>
+        <div class="step-body">
+          <h3>市集類型與區域評估</h3>
+          <p>如何從客群、人流、區域選擇、場地差異各層面去做評估，找到適合的市集類型與區域。</p>
+        </div>
+      </div>
+      <div class="step-note">前三步讓你具備「有產品、有定價、有準備」的基礎，副業出攤不再只是想像，而是能真正開始。</div>
+      <div class="step-item">
+        <div class="step-circle">4</div>
+        <div class="step-body">
+          <h3>規劃市集準備清單</h3>
+          <p>從選擇市集、市集報名、攤位必備設備、收款工具與報名流程，讓你不再因準備繁瑣而卡關。</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">5</div>
+        <div class="step-body">
+          <h3>設計攤位與顧客互動</h3>
+          <p>用佈置技巧與攤位設計吸引目光，搭配話術提升成交率，打造顧客願意停留的體驗。</p>
+        </div>
+      </div>
+      <div class="step-item">
+        <div class="step-circle">6</div>
+        <div class="step-body">
+          <h3>市集執行與實戰演練</h3>
+          <p>從市集現場出攤、動線規劃到銷售實作，累積經驗並蒐集顧客回饋，快速驗證市場。</p>
+        </div>
+      </div>
+      <div class="step-note">透過這 6 個步驟，你將具備從商品定位、定價、市集選擇、準備、互動到實戰銷售養成的全套能力，讓市集擺攤銷售破萬不再只是難事，而是能真正落地並持續成長。</div>
+    </div>
+  </div>
+</section>
+
+<!-- WHO IS THIS FOR -->
+<section class="section section-dark">
+  <div class="inner">
+    <div class="sec-tag sec-tag-light">課程適合對象</div>
+    <h2 class="sec-title" style="color:#fff">這堂課適合誰？</h2>
+    <p class="sec-sub-light">準備好從 0 開始，願意嘗試、實驗，並在市集中實際創造屬於你的銷售破萬方式。</p>
+    <div class="who-grid">
+      <div class="who-card">
+        <span class="emoji">⛺</span>
+        <h3>市集新手</h3>
+        <p>第一次市集擺攤，結果銷售不如預期，想要突破有好銷售成績。</p>
+      </div>
+      <div class="who-card">
+        <span class="emoji">💼</span>
+        <h3>上班族</h3>
+        <p>有創業點子，卻不敢一次投入大成本，想用低風險方式試水溫。</p>
+      </div>
+      <div class="who-card">
+        <span class="emoji">🎨</span>
+        <h3>手作者 / 設計師</h3>
+        <p>想把興趣作品帶到市集被更多人看見，找到真正的客群。</p>
+      </div>
+      <div class="who-card">
+        <span class="emoji">📚</span>
+        <h3>學生</h3>
+        <p>利用課餘時間，小資金嘗試副業，累積實戰經驗。</p>
+      </div>
+      <div class="who-card">
+        <span class="emoji">🍳</span>
+        <h3>美食愛好者</h3>
+        <p>料理好吃但朋友以外的顧客不容易接觸，缺乏測試市場的機會。</p>
+      </div>
+      <div class="who-card">
+        <span class="emoji">🚀</span>
+        <h3>創業初學者</h3>
+        <p>想用市集驗證市場，少走冤枉路，避免創業踩雷。</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE FEATURES -->
+<section class="section">
+  <div class="inner">
+    <div class="sec-tag">課程特色</div>
+    <h2 class="sec-title">為什麼選這堂課？</h2>
+    <div class="features-list">
+      <div class="feature-card">
+        <div class="feature-icon">💲</div>
+        <div>
+          <h3>低成本快速驗證市場</h3>
+          <p>從市集開始創業，不需高額資金，即可快速驗證市場。讓你用最小投入，獲得最大學習與回報。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📊</div>
+        <div>
+          <h3>完整六大步驟系統</h3>
+          <p>從選品、定價、準備、攤位設計，到實戰現場銷售，系統化帶你走完市集副業的完整流程。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">📖</div>
+        <div>
+          <h3>真實市集案例分享</h3>
+          <p>講師親身參與 30+ 場市集，把實戰經驗轉化成可執行的方法，讓你少走冤枉路。</p>
+        </div>
+      </div>
+      <div class="feature-card">
+        <div class="feature-icon">✅</div>
+        <div>
+          <h3>任務導向學習</h3>
+          <p>每個章節都有實作任務，讓你邊學邊做，快速落地應用，而不只是看完就忘。</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- BONUSES -->
+<section class="section section-alt">
+  <div class="inner">
+    <div class="sec-tag">課程附贈</div>
+    <h2 class="sec-title">除了課程以外，你還會得到…</h2>
+    <table class="bonus-table">
+      <thead><tr><th>教材名稱</th><th>功能說明</th></tr></thead>
+      <tbody>
+        <tr><td>成本利潤計算表</td><td>自動計算成本與毛利，確保獲利空間，告別「賣越多賠越多」。</td></tr>
+        <tr><td>市集評估表及準備清單</td><td>市集選擇評估，找出適合你商品的市集類型；出攤必備物品一次打包，避免遺漏。</td></tr>
+        <tr><td>破萬規劃目標表</td><td>先把營業時間、人流、成交率、客單價拆解成具體數字，讓破萬目標變得可執行。</td></tr>
+        <tr><td>銷售紀錄表</td><td>簡單紀錄來客數與成交數，快速找出下一場需要優化的關鍵。</td></tr>
+      </tbody>
+    </table>
+    <div class="bonus-special">
+      <span class="badge">達 1,000 名</span>
+      <span class="badge2">一對一諮詢 抽 3 名</span>
+      <p>如果你有想要報名市集，或是正在準備參加市集者，購課後有機會獲得最佳切身諮詢機會。</p>
+    </div>
+  </div>
+</section>
+
+<!-- INSTRUCTOR -->
+<section class="section">
+  <div class="inner">
+    <div class="sec-tag">關於講師</div>
+    <h2 class="sec-title">Hi，我是 Ryan</h2>
+    <div class="instructor-wrap">
+      <div class="instructor-avatar">
+        <img src="https://static.pressplay.cc/static/uploads/enh_author/033EFB7D88E14E79DFC9997571B7A808/c1ddad648076dce4766c63dc5d896c6e_resized.jpg" alt="斜槓創業家 Ryan">
+      </div>
+      <div class="instructor-info">
+        <p>目前是市集新式飲料品牌 <strong>"FruitBro"</strong> — 新鮮水果茶的主理人，也是位斜槓創業家，參與過多種類型市集創業實戰，並有超過 20 場市集銷售「破萬元」以上的好成績。</p>
+        <div class="instructor-highlight">
+          累積指導超過 50 位學員成功擺攤與提升銷售表現，課程方法經實戰驗證，有效幫助學員達成單場破萬的成果。從第一次擺攤的緊張與陌生，到參與多場市集後逐步累積經驗，我一路走過產品選品、市場地位、定價、攤位設計到顧客互動，每一步都親自實戰，從零開始打造副業品牌。
+        </div>
+        <ul class="instructor-bullets">
+          <li>參與超過 30 場以上的市集活動，超過 20 場單日銷售「破萬元」</li>
+          <li>10 場以上達成現場「提前完售」的銷售表現</li>
+          <li>2 次成功入選臺北市青年局舉辦《斜槓自由市》市集品牌</li>
+          <li>將市集經驗系統化整理，幫助 50+ 位學員成功複製</li>
+        </ul>
+        <div class="instructor-stats" style="margin-top:20px">
+          <div class="inst-stat"><span class="inst-stat-num">30+</span><span class="inst-stat-label">累積出攤場次</span></div>
+          <div class="inst-stat"><span class="inst-stat-num">20+</span><span class="inst-stat-label">單日破萬</span></div>
+          <div class="inst-stat"><span class="inst-stat-num">50+</span><span class="inst-stat-label">指導學員</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- COURSE INFO -->
+<section class="section section-alt">
+  <div class="inner">
+    <div class="sec-tag">課程規格</div>
+    <h2 class="sec-title">課程資訊</h2>
+    <div class="info-grid">
+      <div class="info-item"><span class="info-icon">🎬</span><div><span class="info-label">影音總長</span><span class="info-val">約 2 小時 30 分鐘</span></div></div>
+      <div class="info-item"><span class="info-icon">📋</span><div><span class="info-label">學習重點</span><span class="info-val">市集創業實戰流程、產品定價、成本利潤計算</span></div></div>
+      <div class="info-item"><span class="info-icon">📎</span><div><span class="info-label">學習教材</span><span class="info-val">成本利潤計算表、市集評估表、準備清單表、破萬目標計劃表、銷售紀錄表</span></div></div>
+      <div class="info-item"><span class="info-icon">♾️</span><div><span class="info-label">觀看限制</span><span class="info-val">不限時間、次數</span></div></div>
+      <div class="info-item"><span class="info-icon">📱</span><div><span class="info-label">可用裝置</span><span class="info-val">電腦、手機（網頁、APP）</span></div></div>
+      <div class="info-item"><span class="info-icon">💳</span><div><span class="info-label">收費方式</span><span class="info-val">一次收費（課程專案）</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- PRICING CTA -->
+<section class="section">
+  <div class="inner">
+    <div class="pricing-box">
+      <h2>準備好挑戰你的第一場市集了嗎？</h2>
+      <p>從選品、定價到現場銷售，一堂課帶你走完整流程</p>
+      <p>50+ 位學員實證，零基礎也能在第一場市集看到成果</p>
+      <div class="pricing-original">原價 NT$3,880</div>
+      <div class="pricing-current">NT$1,380</div>
+      <div class="pricing-perks">
+        <span class="pricing-perk">2.5 小時完整課程</span>
+        <span class="pricing-perk">5 份實用表格</span>
+        <span class="pricing-perk">不限次數回看</span>
+        <span class="pricing-perk">電腦手機皆可學</span>
+      </div>
+      <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="pricing-btn">立即報名，限時 NT$1,380 →</a>
+      <p class="pricing-note">點擊後前往 PressPlay 平台完成購課</p>
+    </div>
+  </div>
+</section>
+
+<!-- NEWSLETTER -->
+<section id="newsletter" class="newsletter-section">
+  <div class="newsletter-inner">
+    <div class="newsletter-tag">免費訂閱</div>
+    <h2>加入擺攤週報，每週獲取市集實戰攻略</h2>
+    <p>每週一封，分享選品策略、攤位設計、銷售話術，幫你少走冤枉路、每場都有進步。</p>
+    <form class="newsletter-form" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+      <div class="form-row">
+        <input type="text" name="name" placeholder="名稱" required>
+        <input type="email" name="email" placeholder="電子郵件" required>
+        <button type="submit">加入訂閱</button>
+      </div>
+      <p class="form-disclaimer">隨時可以取消，我們不會將你的資訊分享給第三方。</p>
+    </form>
+  </div>
+</section>
+
+<footer>
+  <p>© 2026 市集擺攤指南 · <a href="/market-stall-guide/">回首頁</a> · 課程由 <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank">Ryan 在 PressPlay 開設</a></p>
+</footer>
+
+</body>
+</html>
