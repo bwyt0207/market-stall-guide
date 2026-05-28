@@ -1,7 +1,9 @@
 ---
+layout: article
 title: 擺攤賣什麼最賺錢？2026熱銷品類毛利率完整比較
 meta_description: 擺攤賣什麼最賺錢？本文比較6大品類毛利率、起步成本與選品原則，附真實案例與FAQ，幫你找到最適合的攤位選品策略！
 slug: best-products-to-sell-at-market
+permalink: /articles/best-products-to-sell-at-market/
 keyword: 擺攤賣什麼最賺錢
 lsi_keywords: 擺攤選品, 市集熱銷商品, 擺攤利潤, 攤位毛利, 文創市集賺錢
 date: 2026-05-28

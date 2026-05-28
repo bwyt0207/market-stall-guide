@@ -1,7 +1,9 @@
 ---
+layout: article
 title: 第一次擺攤需要準備什麼？新手完整指南
 meta_description: 第一次擺攤需要準備什麼？完整整理擺攤設備清單、出攤準備 SOP、市集選擇與陳列技巧，新手零基礎也能順利出攤！立即了解。
 slug: first-time-market-stall
+permalink: /articles/first-time-market-stall/
 keyword: 第一次擺攤需要準備什麼
 lsi_keywords: 擺攤設備清單, 出攤準備, 市集新手, 攤位佈置, 擺攤陳列技巧
 date: 2026-05-28

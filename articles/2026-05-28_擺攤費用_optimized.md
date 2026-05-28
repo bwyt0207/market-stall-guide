@@ -1,7 +1,9 @@
 ---
+layout: article
 title: 擺攤費用完全解析：第一個月真實花費大公開（2026最新）
 meta_description: 新手擺攤費用怎麼算？攤位租金、設備採購、隱藏成本一次公開，附損益平衡公式與三種預算策略，立即試算你的擺攤成本！
 slug: market-stall-cost
+permalink: /articles/market-stall-cost/
 keyword: 擺攤費用
 lsi_keywords: 攤位租金, 市集報名費, 擺攤成本, 隱藏費用, 損益平衡
 date: 2026-05-28
