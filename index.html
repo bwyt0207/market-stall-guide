@@ -530,32 +530,70 @@
     .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
 
     /* ── TESTIMONIALS ── */
-    .testimonials-section { padding: 72px 24px 80px; background: var(--cream); }
-    .testimonials-header { text-align: center; margin-bottom: 48px; }
+    /* ── TESTIMONIALS CAROUSEL ── */
+    .testimonials-section { padding: 72px 0 64px; background: var(--cream); overflow: hidden; }
+    .testimonials-header { text-align: center; padding: 0 24px; margin-bottom: 48px; }
     .testimonials-tag {
       display: inline-block; border: 1px solid var(--amber); color: var(--amber);
       font-size: 0.7rem; letter-spacing: 0.18em; padding: 4px 14px; text-transform: uppercase; margin-bottom: 12px;
     }
     .testimonials-title { font-family: 'Noto Serif TC', serif; font-size: clamp(1.6rem, 3vw, 2.2rem); font-weight: 900; margin-bottom: 8px; color: var(--ink); }
     .testimonials-sub { color: var(--text-muted); font-size: 0.93rem; }
-    .testimonials-gallery {
-      max-width: 900px; margin: 0 auto 40px;
-      display: grid; grid-template-columns: 1fr 1fr; gap: 24px;
+
+    /* Carousel viewport */
+    .tc-viewport { overflow: hidden; width: 100%; }
+    .tc-track {
+      display: flex; gap: 20px; transition: transform 0.45s cubic-bezier(0.25,0.46,0.45,0.94);
+      padding: 12px 0 20px;
+      will-change: transform;
     }
-    @media (max-width: 680px) { .testimonials-gallery { grid-template-columns: 1fr; } }
-    .t-gallery-card {
-      border-radius: 16px; overflow: hidden; box-shadow: 0 4px 20px rgba(0,0,0,0.1);
-      transition: transform 0.2s, box-shadow 0.2s; background: #fff;
+
+    /* Cards */
+    .tc-card {
+      flex-shrink: 0; width: 300px;
+      background: #fff; border-radius: 18px; overflow: hidden;
+      box-shadow: 0 2px 16px rgba(0,0,0,0.07);
+      transition: transform 0.3s, box-shadow 0.3s;
+      border: 1.5px solid var(--border);
     }
-    .t-gallery-card:hover { transform: translateY(-4px); box-shadow: 0 12px 32px rgba(0,0,0,0.15); }
-    .t-gallery-card img { width: 100%; display: block; }
-    .t-gallery-label {
-      display: flex; justify-content: space-between; align-items: center;
-      padding: 14px 18px; background: #fff;
+    .tc-card.is-center {
+      transform: scale(1.04);
+      box-shadow: 0 10px 32px rgba(200,134,10,0.18);
+      border-color: var(--amber);
     }
-    .t-gallery-badge { font-size: 0.88rem; font-weight: 700; color: var(--ink); }
-    .t-gallery-count { font-size: 0.78rem; color: var(--text-muted); background: var(--cream); padding: 3px 10px; border-radius: 20px; }
-    .testimonials-cta { text-align: center; }
+    .tc-avatar-area {
+      height: 90px; display: flex; align-items: center; padding: 20px;
+      gap: 16px;
+    }
+    .tc-avatar {
+      width: 60px; height: 60px; border-radius: 50%; flex-shrink: 0;
+      display: flex; align-items: center; justify-content: center;
+      font-size: 1.5rem; font-weight: 900; color: #fff;
+      font-family: 'Noto Serif TC', serif;
+    }
+    .tc-name-block { flex: 1; min-width: 0; }
+    .tc-name { font-weight: 700; font-size: 0.97rem; color: var(--ink); }
+    .tc-role { font-size: 0.78rem; color: var(--text-muted); margin-top: 2px; }
+    .tc-stars { font-size: 0.82rem; color: #f5a623; letter-spacing: 1px; margin-top: 4px; }
+    .tc-body { padding: 4px 20px 22px; border-top: 1px solid var(--border); }
+    .tc-badge {
+      display: inline-block; margin: 14px 0 10px;
+      background: var(--amber-pale); color: var(--amber);
+      font-size: 0.72rem; font-weight: 700; padding: 3px 12px; border-radius: 20px;
+    }
+    .tc-text { font-size: 0.87rem; color: #4a3c2a; line-height: 1.75; margin: 0; }
+
+    /* Nav arrows */
+    .tc-nav { display: flex; justify-content: center; gap: 14px; margin-top: 32px; }
+    .tc-btn {
+      width: 48px; height: 48px; border-radius: 50%; border: 2px solid var(--border);
+      background: #fff; cursor: pointer; display: flex; align-items: center; justify-content: center;
+      font-size: 1.1rem; color: var(--ink); transition: all 0.2s;
+    }
+    .tc-btn:hover { background: var(--amber); border-color: var(--amber); color: #fff; }
+    .tc-btn:disabled { opacity: 0.35; cursor: default; }
+    .tc-btn:disabled:hover { background: #fff; border-color: var(--border); color: var(--ink); }
+    .testimonials-cta { text-align: center; margin-top: 32px; padding: 0 24px; }
     .testimonials-cta a {
       display: inline-block; background: var(--amber); color: #fff;
       font-weight: 700; font-size: 0.97rem; padding: 14px 32px;
@@ -1057,26 +1095,278 @@
     <h2 class="testimonials-title">學員好評</h2>
     <p class="testimonials-sub">50+ 位學員親身分享，從新手到單日破萬的真實歷程</p>
   </div>
-  <div class="testimonials-gallery">
-    <div class="t-gallery-card">
-      <img src="/market-stall-guide/assets/images/testimonials-advanced.jpg" alt="成功破萬學員好評 - 飾品、古著、香氛品牌主理人分享">
-      <div class="t-gallery-label">
-        <span class="t-gallery-badge">💰 成功破萬學員</span>
-        <span class="t-gallery-count">7 位學員</span>
+
+  <div class="tc-viewport" id="tcViewport">
+    <div class="tc-track" id="tcTrack">
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#c8860a,#e8a020)">C</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Cindy</div>
+            <div class="tc-role">飾品品牌主理人</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">💰 單日破萬</div>
+          <p class="tc-text">擺攤一年都沒破 8000，上完課後我用老師教的『價值價位策略＋商品組合』，第二場市集就破 1.5 萬！客人明顯感覺我的品牌更專業。</p>
+        </div>
       </div>
-    </div>
-    <div class="t-gallery-card">
-      <img src="/market-stall-guide/assets/images/testimonials-beginner.jpg" alt="新手學員心得 - 第一次擺攤也能成功">
-      <div class="t-gallery-label">
-        <span class="t-gallery-badge">🌱 新手學員心得</span>
-        <span class="t-gallery-count">7 位學員</span>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#1a5c57,#2a8c84)">L</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Leo</div>
+            <div class="tc-role">古著攤主</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">📈 6K → 14K</div>
+          <p class="tc-text">以前我都亂跑市集，有人潮但沒業績。學完『市集類型分析』後挑對區域，搭配老師的顧客話術，單場銷售從 6,000 躍升到 14,000，太驚人了！</p>
+        </div>
       </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#7b4ea0,#a573c8)">E</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Elaine</div>
+            <div class="tc-role">香氛品牌主理人</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">💰 首次破萬</div>
+          <p class="tc-text">這堂課讓我學會從『體驗』出發設計攤位。我加了試聞瓶和小卡互動，結果客人停留更久、平均一人買兩組，第一次破萬元！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#b34a1a,#e06530)">R</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Rita</div>
+            <div class="tc-role">手環品牌主理人</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">💰 破 1.2 萬</div>
+          <p class="tc-text">以前手環款式太像別人，常被比價。學了差異化設計和正確定價後，我重新包裝系列主題，顧客反而更願意買單，單場市集營收突破 1.2 萬元！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#2a6e3f,#45aa63)">N</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Nina</div>
+            <div class="tc-role">甜點品牌創業者</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">📊 毛利 +40%</div>
+          <p class="tc-text">我以前都憑感覺定價，常常忙一整天不知道有沒有賺。上完課學會計算成本結構，重新設計甜點組合價，那場市集營收 12,300 元，毛利提升超過 40%！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#1a3a5c,#2a6090)">D</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Dora</div>
+            <div class="tc-role">手作飾品品牌主理人</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">💰 賣了 12,800</div>
+          <p class="tc-text">最喜歡實戰演練章節，老師讓我們設定破萬目標，照著練習追蹤每日銷售，結果那場真的賣了 12,800！這堂課完全改變我對副業的思維。</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#6b3a7a,#9c5bab)">S</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Shan</div>
+            <div class="tc-role">香氛品牌主理人</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">🤝 吸引合作邀約</div>
+          <p class="tc-text">我原本的香氛品和別人差不多，價格又不敢訂太高。上完課後重新做產品差異化、調整定價策略，並挑選更符合客群的市集，單場營收突破萬元，也吸引到合作邀約！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#c8860a,#f0c040)">Y</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Yuna</div>
+            <div class="tc-role">手作皂創作者</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">🌱 第一場賣 12 件</div>
+          <p class="tc-text">我原本只是想試試手作皂能不能賣，完全沒頭緒。上完課後用『需求＋利潤＋差異化』三步選品法，第一次市集就賣出 12 件商品，客人還追蹤我的 IG！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#3a5c1a,#6a9c30)">J</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Jay</div>
+            <div class="tc-role">木工手作職人</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">📈 毛利率翻倍</div>
+          <p class="tc-text">老師教的『成本＋利潤』計算方式太實用了，我第一次終於知道自己該怎麼定價。那場市集賣了 15 件小木架，毛利率比以前多一倍！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#1a5c57,#38a89d)">魚</div>
+          <div class="tc-name-block">
+            <div class="tc-name">小魚</div>
+            <div class="tc-role">插畫商品設計師</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">🌱 首次破 6,000</div>
+          <p class="tc-text">以前我擺攤都沒人停，後來學了老師的『視覺焦點設計法』，我用高度差＋燈光佈置吸引目光，整場人潮多到我沒空休息，營收第一次破 6,000！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#b34a6e,#e06090)">T</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Tina</div>
+            <div class="tc-role">花藝愛好者</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">🌱 首場近萬元</div>
+          <p class="tc-text">我從沒賣過東西，超怕推銷。老師教的開場話術讓我敢主動和客人互動，第一次市集居然賣出近萬元，現在我開始固定跑市集，越做越有自信！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#6e4a1a,#b07830)">A</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Annie</div>
+            <div class="tc-role">乾燥花飾品新手</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">🌱 超乎預期</div>
+          <p class="tc-text">原本只是興趣，上完課才發現擺攤有策略。透過定位練習找到主要客群，產品包裝換新後吸引更多年輕客人，賣得比想像中好太多！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#2a4a7a,#4a78b8)">寧</div>
+          <div class="tc-name-block">
+            <div class="tc-name">阿寧</div>
+            <div class="tc-role">文創貼紙創作者</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">🌱 首場破 8,000</div>
+          <p class="tc-text">以前覺得市集要靠運氣，結果學了客群分析後才知道選對場次的重要。我挑了親子主題市集出攤，因為對準族群，第一次擺攤就破 8,000！</p>
+        </div>
+      </div>
+
+      <div class="tc-card">
+        <div class="tc-avatar-area">
+          <div class="tc-avatar" style="background:linear-gradient(135deg,#4a3a7a,#7a60c0)">Am</div>
+          <div class="tc-name-block">
+            <div class="tc-name">Amber</div>
+            <div class="tc-role">布包縫紉新手</div>
+            <div class="tc-stars">★★★★★</div>
+          </div>
+        </div>
+        <div class="tc-body">
+          <div class="tc-badge">💡 定價開竅</div>
+          <p class="tc-text">以前我擺攤都亂定價，結果越賣越虧。學完後用課程的定價表格重新計算利潤，調整後不但沒人嫌貴，還覺得質感更好！</p>
+        </div>
+      </div>
+
     </div>
   </div>
+
+  <div class="tc-nav">
+    <button class="tc-btn" id="tcPrev" onclick="tcMove(-1)" aria-label="上一張">←</button>
+    <button class="tc-btn" id="tcNext" onclick="tcMove(1)" aria-label="下一張">→</button>
+  </div>
+
   <div class="testimonials-cta">
     <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank">我也想成為下一個成功案例 →</a>
   </div>
 </section>
+
+<script>
+(function(){
+  var track = document.getElementById('tcTrack');
+  var viewport = document.getElementById('tcViewport');
+  var cards = track.querySelectorAll('.tc-card');
+  var total = cards.length;
+  var current = 0;
+  var cardW = 300 + 20; // card width + gap
+
+  function getOffset() {
+    var vw = viewport.offsetWidth;
+    // center the active card
+    return Math.max(0, (vw - 300) / 2) - current * cardW;
+  }
+
+  function update() {
+    track.style.transform = 'translateX(' + getOffset() + 'px)';
+    cards.forEach(function(c, i){ c.classList.toggle('is-center', i === current); });
+    document.getElementById('tcPrev').disabled = current === 0;
+    document.getElementById('tcNext').disabled = current === total - 1;
+  }
+
+  window.tcMove = function(dir) {
+    current = Math.max(0, Math.min(total - 1, current + dir));
+    update();
+  };
+
+  // touch/drag support
+  var startX, isDragging = false;
+  track.addEventListener('mousedown', function(e){ startX = e.clientX; isDragging = true; });
+  window.addEventListener('mouseup', function(e){
+    if(!isDragging) return; isDragging = false;
+    var diff = e.clientX - startX;
+    if(Math.abs(diff) > 40) tcMove(diff < 0 ? 1 : -1);
+  });
+  track.addEventListener('touchstart', function(e){ startX = e.touches[0].clientX; }, {passive:true});
+  track.addEventListener('touchend', function(e){
+    var diff = e.changedTouches[0].clientX - startX;
+    if(Math.abs(diff) > 40) tcMove(diff < 0 ? 1 : -1);
+  }, {passive:true});
+
+  window.addEventListener('resize', update);
+  update();
+})();
+</script>
 
 <!-- FINAL CTA -->
 <div class="page-wrap">
