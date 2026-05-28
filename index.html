@@ -536,6 +536,30 @@
     .breadcrumb a { color: var(--text-muted); text-decoration: none; }
     .breadcrumb a:hover { color: var(--amber); }
     .breadcrumb span { margin: 0 6px; }
+    .breadcrumb .dropdown { position: relative; display: inline-block; }
+    .breadcrumb .dropdown-label { color: var(--ink); font-weight: 600; cursor: default; }
+    .breadcrumb .dropdown-menu {
+      display: none;
+      position: absolute;
+      top: 100%;
+      left: 0;
+      margin-top: 8px;
+      background: #fff;
+      border: 1px solid var(--border);
+      border-radius: 8px;
+      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
+      min-width: 280px;
+      z-index: 100;
+      padding: 8px 0;
+    }
+    .breadcrumb .dropdown:hover .dropdown-menu { display: block; }
+    .breadcrumb .dropdown-menu a {
+      display: flex; align-items: center; gap: 10px;
+      padding: 10px 16px; color: var(--ink); text-decoration: none;
+      font-size: 0.85rem; font-weight: 500; transition: background 0.15s;
+    }
+    .breadcrumb .dropdown-menu a:hover { background: var(--cream); color: var(--amber); }
+    .breadcrumb .dropdown-menu .icon { font-size: 1rem; }
 
     /* ── DIVIDER ── */
     .divider {
@@ -587,9 +611,21 @@
 <div class="page-wrap">
 
   <nav class="breadcrumb" aria-label="breadcrumb">
-    <a href="/">首頁</a><span>›</span>
-    <a href="/副業">副業教學</a><span>›</span>
-    市集擺攤指南
+    <a href="/market-stall-guide/">首頁</a><span>›</span>
+    <span class="dropdown">
+      <span class="dropdown-label">市集擺攤指南 ▾</span>
+      <div class="dropdown-menu">
+        <a href="/market-stall-guide/articles/market-stall-cost/">
+          <span class="icon">💰</span>擺攤費用完全解析：第一個月真實花費大公開
+        </a>
+        <a href="/market-stall-guide/articles/first-time-market-stall/">
+          <span class="icon">🎒</span>第一次擺攤需要準備什麼？新手完整指南
+        </a>
+        <a href="/market-stall-guide/articles/best-products-to-sell-at-market/">
+          <span class="icon">📈</span>擺攤賣什麼最賺錢？2026 熱銷品類毛利率完整比較
+        </a>
+      </div>
+    </span>
   </nav>
 
   <div class="toc-box">
