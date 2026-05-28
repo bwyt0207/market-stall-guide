@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>擺攤指南 Blog｜市集擺攤實戰文章全收錄</title>
+  <meta name="description" content="市集擺攤實戰文章庫，涵蓋費用解析、新手準備、選品策略，每週更新。幫你在出攤前做好完整規劃。">
+  <link rel="canonical" href="https://bwyt0207.github.io/market-stall-guide/blog/">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+TC:wght@400;700;900&family=Noto+Sans+TC:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --ink: #1a1208;
+      --paper: #faf7f2;
+      --cream: #f2ead8;
+      --amber: #c8860a;
+      --amber-light: #e8a020;
+      --amber-pale: #fdf3dc;
+      --rust: #b34a1a;
+      --border: #d4c4a0;
+      --text-muted: #6b5d47;
+    }
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    html { scroll-behavior: smooth; }
+    body { background: var(--paper); color: var(--ink); font-family: 'Noto Sans TC', sans-serif; line-height: 1.8; }
+
+    /* NAV */
+    nav {
+      position: sticky; top: 0; z-index: 100;
+      background: #fff; border-bottom: 1px solid var(--border);
+      padding: 0 32px; display: flex; justify-content: space-between; align-items: center;
+      height: 60px; box-shadow: 0 1px 4px rgba(0,0,0,0.04);
+    }
+    .nav-logo { font-family: 'Noto Serif TC', serif; font-weight: 900; font-size: 1.05rem; color: var(--ink); text-decoration: none; display: flex; align-items: center; gap: 8px; }
+    .nav-logo-icon { font-size: 1.3rem; }
+    .nav-center { display: flex; gap: 4px; align-items: center; }
+    .nav-center a {
+      color: var(--text-muted); text-decoration: none; font-size: 0.88rem; font-weight: 500;
+      padding: 6px 14px; border-radius: 6px; transition: color 0.15s, background 0.15s;
+    }
+    .nav-center a:hover { color: var(--ink); background: var(--cream); }
+    .nav-center a.active { color: var(--amber); font-weight: 700; }
+    .nav-right { display: flex; gap: 10px; align-items: center; }
+    .nav-btn-outline {
+      color: var(--amber); border: 1.5px solid var(--amber); background: transparent;
+      padding: 7px 16px; border-radius: 6px; font-size: 0.84rem; font-weight: 700;
+      text-decoration: none; transition: background 0.15s;
+    }
+    .nav-btn-outline:hover { background: var(--amber-pale); }
+    .nav-btn-fill {
+      background: var(--amber); color: #fff; padding: 7px 16px;
+      border-radius: 6px; font-size: 0.84rem; font-weight: 700;
+      text-decoration: none; transition: background 0.2s;
+    }
+    .nav-btn-fill:hover { background: var(--rust); }
+
+    /* HERO */
+    .blog-hero {
+      background: var(--ink); color: var(--paper);
+      padding: 64px 24px 48px; text-align: center;
+    }
+    .blog-hero-tag {
+      display: inline-block; border: 1px solid var(--amber); color: var(--amber-light);
+      font-size: 0.72rem; letter-spacing: 0.15em; padding: 4px 14px;
+      text-transform: uppercase; margin-bottom: 20px;
+    }
+    .blog-hero h1 { font-family: 'Noto Serif TC', serif; font-size: clamp(1.6rem, 4vw, 2.4rem); font-weight: 900; margin-bottom: 12px; }
+    .blog-hero p { color: #c8bda8; font-size: 0.95rem; }
+
+    /* FILTER TABS */
+    .filter-wrap { background: #fff; border-bottom: 1px solid var(--border); padding: 0 24px; position: sticky; top: 57px; z-index: 90; }
+    .filter-tabs { max-width: 900px; margin: 0 auto; display: flex; gap: 0; overflow-x: auto; }
+    .filter-tab {
+      padding: 14px 20px; font-size: 0.85rem; font-weight: 500; color: var(--text-muted);
+      cursor: pointer; border-bottom: 2px solid transparent; white-space: nowrap;
+      transition: color 0.15s, border-color 0.15s; background: none; border-left: none; border-right: none; border-top: none;
+    }
+    .filter-tab:hover { color: var(--amber); }
+    .filter-tab.active { color: var(--amber); border-bottom-color: var(--amber); font-weight: 700; }
+
+    /* MAIN LAYOUT */
+    .main-wrap { max-width: 900px; margin: 0 auto; padding: 48px 24px 80px; display: grid; grid-template-columns: 1fr 280px; gap: 40px; }
+    @media (max-width: 720px) { .main-wrap { grid-template-columns: 1fr; } .sidebar { display: none; } }
+
+    /* ARTICLE CARDS */
+    .article-list { display: flex; flex-direction: column; gap: 24px; }
+    .article-card {
+      display: block; text-decoration: none; background: #fff;
+      border: 1px solid var(--border); border-radius: 10px; overflow: hidden;
+      transition: box-shadow 0.2s, transform 0.2s;
+    }
+    .article-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.10); transform: translateY(-2px); }
+    .card-banner {
+      height: 6px;
+    }
+    .card-banner.cost   { background: linear-gradient(90deg, #c8860a, #e8a020); }
+    .card-banner.prep   { background: linear-gradient(90deg, #5a7a5a, #7aaa7a); }
+    .card-banner.product { background: linear-gradient(90deg, #b34a1a, #d4621a); }
+
+    .card-body { display: flex; gap: 20px; padding: 22px 24px 0; }
+    .card-icon { font-size: 2.2rem; line-height: 1; flex-shrink: 0; }
+    .card-content { flex: 1; }
+    .card-tag {
+      display: inline-block; font-size: 0.7rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 3px 10px; border-radius: 20px;
+      background: var(--amber-pale); color: var(--amber); margin-bottom: 8px;
+    }
+    .card-tag.green { background: #edf5ed; color: #5a7a5a; }
+    .card-tag.rust  { background: #fdf0eb; color: var(--rust); }
+    .card-title { font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: 1.1rem; color: var(--ink); line-height: 1.5; margin-bottom: 8px; }
+    .card-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.75; }
+    .card-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 24px; margin-top: 16px;
+      border-top: 1px solid var(--cream); background: var(--cream);
+    }
+    .card-meta { font-size: 0.78rem; color: var(--text-muted); display: flex; gap: 12px; }
+    .card-cta { font-size: 0.82rem; font-weight: 700; color: var(--amber); }
+    .article-card:hover .card-cta { color: var(--rust); }
+
+    /* SIDEBAR */
+    .sidebar { display: flex; flex-direction: column; gap: 24px; }
+    .sidebar-card { background: #fff; border: 1px solid var(--border); border-radius: 10px; padding: 24px; }
+    .sidebar-card h3 { font-family: 'Noto Serif TC', serif; font-size: 1rem; font-weight: 700; color: var(--ink); margin-bottom: 12px; padding-bottom: 10px; border-bottom: 1px solid var(--border); }
+    .sidebar-card p { font-size: 0.86rem; color: var(--text-muted); margin-bottom: 14px; line-height: 1.7; }
+    .sidebar-cta {
+      display: block; background: var(--amber); color: #fff; text-align: center;
+      padding: 10px; border-radius: 6px; text-decoration: none;
+      font-size: 0.85rem; font-weight: 700; transition: background 0.2s;
+    }
+    .sidebar-cta:hover { background: var(--rust); }
+    .sidebar-tags { display: flex; flex-wrap: wrap; gap: 8px; }
+    .sidebar-tag {
+      display: inline-block; padding: 5px 12px; background: var(--amber-pale);
+      color: var(--amber); border-radius: 20px; font-size: 0.78rem; font-weight: 600;
+      text-decoration: none; cursor: pointer; transition: background 0.15s;
+    }
+    .sidebar-tag:hover { background: var(--cream); }
+
+    /* FOOTER */
+    footer { text-align: center; padding: 32px; color: var(--text-muted); font-size: 0.82rem; border-top: 1px solid var(--border); }
+    footer a { color: var(--amber); text-decoration: none; }
+
+    /* HIDDEN class for filter */
+    .article-card.hidden { display: none; }
+  </style>
+</head>
+<body>
+
+<nav>
+  <a href="/market-stall-guide/" class="nav-logo">
+    <span class="nav-logo-icon">⛺</span>市集擺攤指南
+  </a>
+  <div class="nav-center">
+    <a href="/market-stall-guide/">首頁</a>
+    <a href="/market-stall-guide/blog/" class="active">擺攤 Blog</a>
+  </div>
+  <div class="nav-right">
+    <a href="/market-stall-guide/blog/" class="nav-btn-outline">免費文章</a>
+    <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="nav-btn-fill">🎯 立即看課程</a>
+  </div>
+</nav>
+
+<!-- HERO -->
+<div class="blog-hero">
+  <div class="blog-hero-tag">每週持續更新</div>
+  <h1>擺攤實戰指南 Blog</h1>
+  <p>從費用、準備到選品，幫你在出攤前做好完整規劃</p>
+</div>
+
+<!-- FILTER TABS -->
+<div class="filter-wrap">
+  <div class="filter-tabs">
+    <button class="filter-tab active" data-filter="all">全部文章</button>
+    <button class="filter-tab" data-filter="cost">擺攤費用</button>
+    <button class="filter-tab" data-filter="prep">新手準備</button>
+    <button class="filter-tab" data-filter="product">選品策略</button>
+  </div>
+</div>
+
+<!-- MAIN + SIDEBAR -->
+<div class="main-wrap">
+
+  <!-- ARTICLE LIST -->
+  <main>
+    <div class="article-list">
+
+      <a href="/market-stall-guide/articles/market-stall-cost/" class="article-card" data-category="cost">
+        <div class="card-banner cost"></div>
+        <div class="card-body">
+          <span class="card-icon">💰</span>
+          <div class="card-content">
+            <span class="card-tag">擺攤費用</span>
+            <div class="card-title">擺攤費用完全解析：第一個月真實花費大公開（2026最新）</div>
+            <div class="card-desc">攤位租金、設備採購、隱藏成本一次公開，附損益平衡公式與三種預算等級策略。在花第一分錢之前，先把帳算清楚，避免第一個月就燒光預算。</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <span>2026-05-28</span>
+            <span>閱讀約 8 分鐘</span>
+          </div>
+          <span class="card-cta">閱讀全文 →</span>
+        </div>
+      </a>
+
+      <a href="/market-stall-guide/articles/first-time-market-stall/" class="article-card" data-category="prep">
+        <div class="card-banner prep"></div>
+        <div class="card-body">
+          <span class="card-icon">🎒</span>
+          <div class="card-content">
+            <span class="card-tag green">新手準備</span>
+            <div class="card-title">第一次擺攤需要準備什麼？新手完整指南</div>
+            <div class="card-desc">完整整理擺攤設備清單、出攤準備 SOP、市集選擇與陳列技巧。新手零基礎也能順利出攤，不再在市集開始前 10 分鐘才到、手忙腳亂。</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <span>2026-05-28</span>
+            <span>閱讀約 7 分鐘</span>
+          </div>
+          <span class="card-cta">閱讀全文 →</span>
+        </div>
+      </a>
+
+      <a href="/market-stall-guide/articles/best-products-to-sell-at-market/" class="article-card" data-category="product">
+        <div class="card-banner product"></div>
+        <div class="card-body">
+          <span class="card-icon">📈</span>
+          <div class="card-content">
+            <span class="card-tag rust">選品策略</span>
+            <div class="card-title">擺攤賣什麼最賺錢？2026 熱銷品類毛利率完整比較</div>
+            <div class="card-desc">比較 6 大品類毛利率、起步成本與選品原則，附真實案例與常見問題。好產品只是入場券，找到對的品類才是獲利關鍵。</div>
+          </div>
+        </div>
+        <div class="card-footer">
+          <div class="card-meta">
+            <span>2026-05-28</span>
+            <span>閱讀約 9 分鐘</span>
+          </div>
+          <span class="card-cta">閱讀全文 →</span>
+        </div>
+      </a>
+
+    </div>
+  </main>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+
+    <div class="sidebar-card">
+      <h3>🎯 系統學習擺攤</h3>
+      <p>Ryan 帶你從選品、定價、攤位設計到銷售話術，一套完整的市集創業流程。</p>
+      <p style="font-size:0.78rem; font-weight:700; color:var(--amber); margin-bottom:12px;">20 場破萬 · 50+ 位學員輔導</p>
+      <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="sidebar-cta">立即看課程 NT$1,380 →</a>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>📂 文章分類</h3>
+      <div class="sidebar-tags">
+        <span class="sidebar-tag" onclick="filterArticles('cost')">💰 擺攤費用</span>
+        <span class="sidebar-tag" onclick="filterArticles('prep')">🎒 新手準備</span>
+        <span class="sidebar-tag" onclick="filterArticles('product')">📈 選品策略</span>
+        <span class="sidebar-tag" onclick="filterArticles('all')">全部文章</span>
+      </div>
+    </div>
+
+    <div class="sidebar-card">
+      <h3>💡 擺攤快速入門</h3>
+      <p style="font-size:0.82rem; color:var(--text-muted); line-height:1.9;">
+        ① 先讀費用分析，確認你的預算<br>
+        ② 參考新手準備清單，不漏帶任何東西<br>
+        ③ 選對品類，讓毛利從一開始就站在你這邊
+      </p>
+    </div>
+
+  </aside>
+
+</div>
+
+<footer>
+  <p>© 2026 市集擺攤指南 · <a href="/market-stall-guide/">回首頁</a> · 課程由 <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank">Ryan 在 PressPlay 開設</a></p>
+</footer>
+
+<script>
+  // Filter tabs
+  const tabs = document.querySelectorAll('.filter-tab');
+  const cards = document.querySelectorAll('.article-card');
+
+  tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+      tabs.forEach(t => t.classList.remove('active'));
+      tab.classList.add('active');
+      filterArticles(tab.dataset.filter);
+    });
+  });
+
+  function filterArticles(category) {
+    tabs.forEach(t => {
+      t.classList.toggle('active', t.dataset.filter === category);
+    });
+    cards.forEach(card => {
+      if (category === 'all' || card.dataset.category === category) {
+        card.classList.remove('hidden');
+      } else {
+        card.classList.add('hidden');
+      }
+    });
+  }
+</script>
+
+</body>
+</html>
