@@ -529,6 +529,50 @@
     }
     .btn-white:hover { transform: translateY(-2px); box-shadow: 0 8px 24px rgba(0,0,0,0.2); }
 
+    /* ── TESTIMONIALS ── */
+    .testimonials-section { padding: 72px 0 80px; background: var(--paper); overflow: hidden; }
+    .testimonials-header { text-align: center; padding: 0 24px; margin-bottom: 40px; }
+    .testimonials-tag {
+      display: inline-block; border: 1px solid var(--amber); color: var(--amber);
+      font-size: 0.7rem; letter-spacing: 0.18em; padding: 4px 14px; text-transform: uppercase; margin-bottom: 12px;
+    }
+    .testimonials-title { font-family: 'Noto Serif TC', serif; font-size: clamp(1.4rem, 3vw, 2rem); font-weight: 900; margin-bottom: 8px; color: var(--ink); }
+    .testimonials-sub { color: var(--text-muted); font-size: 0.93rem; }
+    .testimonials-track-wrap { overflow-x: auto; padding: 16px 40px 32px; scrollbar-width: none; }
+    .testimonials-track-wrap::-webkit-scrollbar { display: none; }
+    .testimonials-track {
+      display: flex; gap: 20px; width: max-content; align-items: center;
+      padding-left: calc(50vw - 160px);
+      padding-right: calc(50vw - 160px);
+    }
+    .t-card {
+      width: 280px; background: #fff; border: 1px solid var(--border);
+      border-radius: 16px; overflow: hidden; flex-shrink: 0;
+      box-shadow: 0 2px 12px rgba(0,0,0,0.06);
+      transition: transform 0.2s, box-shadow 0.2s;
+    }
+    .t-card:hover { transform: translateY(-4px); box-shadow: 0 8px 24px rgba(0,0,0,0.12); }
+    .t-card-center {
+      width: 300px; transform: scale(1.05);
+      border-color: var(--amber); box-shadow: 0 8px 28px rgba(200,134,10,0.18);
+    }
+    .t-card-center:hover { transform: scale(1.05) translateY(-4px); }
+    .t-card-img { height: 180px; background-size: cover; background-position: center; }
+    .t-img-1 { background: linear-gradient(135deg, #c8860a 0%, #e8a020 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    .t-img-2 { background: linear-gradient(135deg, #1a5c57 0%, #2a8c84 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    .t-img-3 { background: linear-gradient(135deg, #b34a1a 0%, #e06530 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    .t-img-4 { background: linear-gradient(135deg, #4a3580 0%, #7355b5 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    .t-img-5 { background: linear-gradient(135deg, #1a3a5c 0%, #2a5c8c 100%); display: flex; align-items: center; justify-content: center; font-size: 4rem; }
+    .t-card-body { padding: 16px 18px 20px; }
+    .t-username { display: flex; align-items: center; gap: 6px; font-size: 0.82rem; font-weight: 700; color: var(--ink); margin-bottom: 8px; }
+    .t-badge {
+      display: inline-block; background: var(--amber-pale); color: var(--amber);
+      font-size: 0.72rem; font-weight: 700; padding: 3px 10px; border-radius: 20px;
+      margin-bottom: 10px;
+    }
+    .t-text { font-size: 0.87rem; color: var(--text-muted); line-height: 1.7; margin: 0; }
+    @media (max-width: 600px) { .testimonials-track { padding-left: 24px; padding-right: 24px; } .t-card-center { transform: none; } .t-card-center:hover { transform: translateY(-4px); } }
+
     /* ── NEWSLETTER ── */
     .newsletter-section {
       background: linear-gradient(135deg, #0f3d3a 0%, #1a5c57 100%);
@@ -1072,6 +1116,65 @@
     </div>
   </section>
 </div>
+
+<!-- STUDENT TESTIMONIALS -->
+<section class="testimonials-section">
+  <div class="testimonials-header">
+    <div class="testimonials-tag">學員真實回饋</div>
+    <h2 class="testimonials-title">50+ 位學員的市集之路</h2>
+    <p class="testimonials-sub">從第一次擺攤到單日破萬，看看他們怎麼說</p>
+  </div>
+  <div class="testimonials-track-wrap">
+    <div class="testimonials-track">
+
+      <div class="t-card">
+        <div class="t-card-img t-img-1">🛍️</div>
+        <div class="t-card-body">
+          <div class="t-username"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> Mia_market</div>
+          <div class="t-badge">單日破萬 ✓</div>
+          <p class="t-text">上課前根本不知道怎麼選市集，一直選到客群完全不對的地方。學完之後第三場就單日破萬，真的差很多！</p>
+        </div>
+      </div>
+
+      <div class="t-card t-card-center">
+        <div class="t-card-img t-img-2">⛺</div>
+        <div class="t-card-body">
+          <div class="t-username"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> jayden.stall</div>
+          <div class="t-badge">提前完售 ✓</div>
+          <p class="t-text">Ryan 的定價策略真的讓我開竅了！以前都在打價格戰，現在懂得包裝產品的價值，反而賣更快、利潤更高，第二場就提前完售。</p>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <div class="t-card-img t-img-3">🎨</div>
+        <div class="t-card-body">
+          <div class="t-username"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> coco_weekendstall</div>
+          <div class="t-badge">回購率翻倍 ✓</div>
+          <p class="t-text">攤位設計那一塊學到很多，以前擺攤就是東西堆一堆，現在懂得用高低層次和動線引流，客人停留時間明顯變長了。</p>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <div class="t-card-img t-img-4">🍊</div>
+        <div class="t-card-body">
+          <div class="t-username"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> tim_fruitstall</div>
+          <div class="t-badge">第一場破 8 千 ✓</div>
+          <p class="t-text">完全沒有擺攤經驗的我，按照課程步驟一步一步來，第一場就賣了 8 千多，比我預期的好太多，超推薦給新手！</p>
+        </div>
+      </div>
+
+      <div class="t-card">
+        <div class="t-card-img t-img-5">✨</div>
+        <div class="t-card-body">
+          <div class="t-username"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg> annie_handmade</div>
+          <div class="t-badge">穩定副業收入 ✓</div>
+          <p class="t-text">上完課最大的收穫是「系統化思維」，每次擺攤都有目標、有數據、有改進方向，現在市集已經是我穩定的副業收入來源。</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
 
 <!-- FINAL CTA -->
 <div class="page-wrap">
