@@ -536,30 +536,38 @@
     .breadcrumb a { color: var(--text-muted); text-decoration: none; }
     .breadcrumb a:hover { color: var(--amber); }
     .breadcrumb span { margin: 0 6px; }
-    .breadcrumb .dropdown { position: relative; display: inline-block; }
-    .breadcrumb .dropdown-label { color: var(--ink); font-weight: 600; cursor: default; }
-    .breadcrumb .dropdown-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      margin-top: 8px;
-      background: #fff;
-      border: 1px solid var(--border);
-      border-radius: 8px;
-      box-shadow: 0 8px 24px rgba(0,0,0,0.1);
-      min-width: 280px;
-      z-index: 100;
-      padding: 8px 0;
+    .breadcrumb .blog-link { color: var(--ink); font-weight: 600; text-decoration: none; }
+    .breadcrumb .blog-link:hover { color: var(--amber); }
+
+    /* ── BLOG CARDS ── */
+    .blog-section { margin: 48px 0; }
+    .blog-section-header { margin-bottom: 32px; }
+    .blog-section-header h2 { font-family: 'Noto Serif TC', serif; font-size: 1.6rem; font-weight: 900; color: var(--ink); margin-bottom: 8px; }
+    .blog-section-header p { color: var(--text-muted); font-size: 0.95rem; }
+    .blog-grid { display: grid; gap: 24px; }
+    .blog-card {
+      display: block; text-decoration: none; background: #fff;
+      border: 1px solid var(--border); border-radius: 10px;
+      overflow: hidden; transition: box-shadow 0.2s, transform 0.2s;
     }
-    .breadcrumb .dropdown:hover .dropdown-menu { display: block; }
-    .breadcrumb .dropdown-menu a {
-      display: flex; align-items: center; gap: 10px;
-      padding: 10px 16px; color: var(--ink); text-decoration: none;
-      font-size: 0.85rem; font-weight: 500; transition: background 0.15s;
+    .blog-card:hover { box-shadow: 0 8px 28px rgba(0,0,0,0.10); transform: translateY(-2px); }
+    .blog-card-top { padding: 24px 24px 0; display: flex; align-items: flex-start; gap: 14px; }
+    .blog-card-icon { font-size: 2rem; line-height: 1; flex-shrink: 0; }
+    .blog-card-tag {
+      display: inline-block; font-size: 0.72rem; font-weight: 700; letter-spacing: 0.08em;
+      text-transform: uppercase; padding: 3px 10px; border-radius: 20px;
+      background: var(--amber-pale); color: var(--amber); margin-bottom: 8px;
     }
-    .breadcrumb .dropdown-menu a:hover { background: var(--cream); color: var(--amber); }
-    .breadcrumb .dropdown-menu .icon { font-size: 1rem; }
+    .blog-card-title { font-family: 'Noto Serif TC', serif; font-weight: 700; font-size: 1.05rem; color: var(--ink); line-height: 1.5; margin-bottom: 6px; }
+    .blog-card-desc { font-size: 0.875rem; color: var(--text-muted); line-height: 1.7; }
+    .blog-card-footer {
+      display: flex; align-items: center; justify-content: space-between;
+      padding: 14px 24px; margin-top: 16px;
+      border-top: 1px solid var(--cream); background: var(--cream);
+    }
+    .blog-card-meta { font-size: 0.78rem; color: var(--text-muted); }
+    .blog-card-cta { font-size: 0.82rem; font-weight: 700; color: var(--amber); }
+    .blog-card:hover .blog-card-cta { color: var(--rust); }
 
     /* ── DIVIDER ── */
     .divider {
@@ -612,20 +620,7 @@
 
   <nav class="breadcrumb" aria-label="breadcrumb">
     <a href="/market-stall-guide/">首頁</a><span>›</span>
-    <span class="dropdown">
-      <span class="dropdown-label">市集擺攤指南 ▾</span>
-      <div class="dropdown-menu">
-        <a href="/market-stall-guide/articles/market-stall-cost/">
-          <span class="icon">💰</span>擺攤費用完全解析：第一個月真實花費大公開
-        </a>
-        <a href="/market-stall-guide/articles/first-time-market-stall/">
-          <span class="icon">🎒</span>第一次擺攤需要準備什麼？新手完整指南
-        </a>
-        <a href="/market-stall-guide/articles/best-products-to-sell-at-market/">
-          <span class="icon">📈</span>擺攤賣什麼最賺錢？2026 熱銷品類毛利率完整比較
-        </a>
-      </div>
-    </span>
+    <a href="#blog" class="blog-link">市集擺攤指南</a>
   </nav>
 
   <div class="toc-box">
@@ -968,33 +963,60 @@
 
 </div><!-- end page-wrap -->
 
-<!-- ARTICLE LINKS SECTION -->
-<div class="page-wrap">
-  <section style="margin: 48px 0; padding: 40px; background: var(--cream); border-radius: 12px; border: 1px solid var(--border);">
-    <h2 style="font-family: 'Noto Serif TC', serif; font-size: 1.5rem; color: var(--ink); margin-bottom: 8px;">📚 擺攤深度指南</h2>
-    <p style="color: var(--text-muted); font-size: 0.95rem; margin-bottom: 28px;">更多新手必看文章，幫你在出攤前做好完整準備</p>
-    <div style="display: grid; gap: 16px;">
-      <a href="/market-stall-guide/articles/market-stall-cost/" style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid var(--border); text-decoration: none; transition: box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
-        <span style="font-size: 1.6rem; line-height: 1;">💰</span>
-        <div>
-          <div style="font-weight: 700; color: var(--ink); font-size: 1rem; margin-bottom: 4px;">擺攤費用完全解析：第一個月真實花費大公開</div>
-          <div style="color: var(--text-muted); font-size: 0.88rem;">攤位租金、設備採購、隱藏成本一次公開，附損益平衡公式與三種預算策略</div>
+<!-- BLOG SECTION -->
+<div class="page-wrap" id="blog">
+  <section class="blog-section">
+    <div class="blog-section-header">
+      <h2>擺攤深度指南</h2>
+      <p>新手必看文章，從費用、準備到選品，幫你在出攤前做好完整規劃</p>
+    </div>
+    <div class="blog-grid">
+
+      <a href="/market-stall-guide/articles/market-stall-cost/" class="blog-card">
+        <div class="blog-card-top">
+          <span class="blog-card-icon">💰</span>
+          <div>
+            <span class="blog-card-tag">擺攤費用</span>
+            <div class="blog-card-title">擺攤費用完全解析：第一個月真實花費大公開（2026最新）</div>
+            <div class="blog-card-desc">攤位租金、設備採購、隱藏成本一次公開，附損益平衡公式與三種預算等級策略，在花第一分錢之前先把帳算清楚。</div>
+          </div>
+        </div>
+        <div class="blog-card-footer">
+          <span class="blog-card-meta">2026-05-28 · 閱讀約 8 分鐘</span>
+          <span class="blog-card-cta">閱讀全文 →</span>
         </div>
       </a>
-      <a href="/market-stall-guide/articles/first-time-market-stall/" style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid var(--border); text-decoration: none; transition: box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
-        <span style="font-size: 1.6rem; line-height: 1;">🎒</span>
-        <div>
-          <div style="font-weight: 700; color: var(--ink); font-size: 1rem; margin-bottom: 4px;">第一次擺攤需要準備什麼？新手完整指南</div>
-          <div style="color: var(--text-muted); font-size: 0.88rem;">擺攤設備清單、出攤準備 SOP、市集選擇與陳列技巧，新手零基礎也能順利出攤</div>
+
+      <a href="/market-stall-guide/articles/first-time-market-stall/" class="blog-card">
+        <div class="blog-card-top">
+          <span class="blog-card-icon">🎒</span>
+          <div>
+            <span class="blog-card-tag">新手準備</span>
+            <div class="blog-card-title">第一次擺攤需要準備什麼？新手完整指南</div>
+            <div class="blog-card-desc">完整整理擺攤設備清單、出攤準備 SOP、市集選擇與陳列技巧，新手零基礎也能順利出攤，不再慌亂。</div>
+          </div>
+        </div>
+        <div class="blog-card-footer">
+          <span class="blog-card-meta">2026-05-28 · 閱讀約 7 分鐘</span>
+          <span class="blog-card-cta">閱讀全文 →</span>
         </div>
       </a>
-      <a href="/market-stall-guide/articles/best-products-to-sell-at-market/" style="display: flex; align-items: flex-start; gap: 16px; padding: 20px; background: #fff; border-radius: 8px; border: 1px solid var(--border); text-decoration: none; transition: box-shadow 0.2s;" onmouseover="this.style.boxShadow='0 4px 12px rgba(0,0,0,0.08)'" onmouseout="this.style.boxShadow='none'">
-        <span style="font-size: 1.6rem; line-height: 1;">📈</span>
-        <div>
-          <div style="font-weight: 700; color: var(--ink); font-size: 1rem; margin-bottom: 4px;">擺攤賣什麼最賺錢？2026 熱銷品類毛利率完整比較</div>
-          <div style="color: var(--text-muted); font-size: 0.88rem;">比較 6 大品類毛利率、起步成本與選品原則，找到最適合你的攤位選品策略</div>
+
+      <a href="/market-stall-guide/articles/best-products-to-sell-at-market/" class="blog-card">
+        <div class="blog-card-top">
+          <span class="blog-card-icon">📈</span>
+          <div>
+            <span class="blog-card-tag">選品策略</span>
+            <div class="blog-card-title">擺攤賣什麼最賺錢？2026 熱銷品類毛利率完整比較</div>
+            <div class="blog-card-desc">比較 6 大品類毛利率、起步成本與選品原則，附真實案例與常見問題，找到最適合你的攤位選品策略。</div>
+          </div>
+        </div>
+        <div class="blog-card-footer">
+          <span class="blog-card-meta">2026-05-28 · 閱讀約 9 分鐘</span>
+          <span class="blog-card-cta">閱讀全文 →</span>
         </div>
       </a>
+
     </div>
   </section>
 </div>
