@@ -41,18 +41,28 @@
     .nav-center a:hover { color: var(--ink); background: var(--cream); }
     .nav-center a.active { color: var(--amber); font-weight: 700; }
     .nav-right { display: flex; gap: 10px; align-items: center; }
-    .nav-btn-outline {
-      color: var(--amber); border: 1.5px solid var(--amber); background: transparent;
-      padding: 7px 16px; border-radius: 6px; font-size: 0.84rem; font-weight: 700;
-      text-decoration: none; transition: background 0.15s;
-    }
-    .nav-btn-outline:hover { background: var(--amber-pale); }
-    .nav-btn-fill {
+    .nav-cta {
       background: var(--amber); color: #fff; padding: 7px 16px;
       border-radius: 6px; font-size: 0.84rem; font-weight: 700;
       text-decoration: none; transition: background 0.2s;
     }
-    .nav-btn-fill:hover { background: var(--rust); }
+    .nav-cta:hover { background: var(--rust); }
+    @keyframes nav-subscribe-pulse {
+      0%   { transform: scale(1); }
+      25%  { transform: scale(1.08); }
+      50%  { transform: scale(0.96); }
+      75%  { transform: scale(1.05); }
+      100% { transform: scale(1); }
+    }
+    .nav-subscribe {
+      background: var(--ink); color: #fff;
+      padding: 7px 16px; border-radius: 6px; font-size: 0.84rem; font-weight: 700;
+      text-decoration: none; transition: background 0.2s; display: inline-block;
+    }
+    .nav-subscribe:hover {
+      background: #333;
+      animation: nav-subscribe-pulse 0.6s ease-in-out infinite;
+    }
 
     /* HERO */
     .blog-hero {
@@ -148,16 +158,14 @@
 <body>
 
 <nav>
-  <a href="/market-stall-guide/" class="nav-logo">
-    <span class="nav-logo-icon">⛺</span>市集擺攤指南
-  </a>
+  <a href="/market-stall-guide/" class="nav-logo"><span class="nav-logo-icon">⛺</span>市集擺攤指南</a>
   <div class="nav-center">
-    <a href="/market-stall-guide/">首頁</a>
-    <a href="/market-stall-guide/blog/" class="active">擺攤 Blog</a>
+    <a href="/market-stall-guide/blog/">關於我們</a>
+    <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank">線上課程</a>
   </div>
   <div class="nav-right">
-    <a href="/market-stall-guide/blog/" class="nav-btn-outline">免費文章</a>
-    <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="nav-btn-fill">🎯 立即看課程</a>
+    <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank" class="nav-cta">🎯 立即看課程</a>
+    <a href="#newsletter" class="nav-subscribe">📧 訂閱電子報</a>
   </div>
 </nav>
 
