@@ -601,6 +601,24 @@
     }
     .testimonials-cta a:hover { background: var(--rust); transform: translateY(-2px); }
 
+    /* Proof images */
+    .tc-proof { padding: 48px 24px 0; max-width: 900px; margin: 0 auto; }
+    .tc-proof-label {
+      text-align: center; font-size: 0.8rem; color: var(--text-muted);
+      letter-spacing: 0.08em; margin-bottom: 20px;
+    }
+    .tc-proof-grid {
+      display: grid; grid-template-columns: 1fr 1fr; gap: 20px;
+    }
+    .tc-proof-img {
+      width: 100%; border-radius: 16px;
+      box-shadow: 0 8px 32px rgba(0,0,0,0.12);
+      display: block;
+    }
+    @media (max-width: 640px) {
+      .tc-proof-grid { grid-template-columns: 1fr; }
+    }
+
     /* ── NEWSLETTER ── */
     .newsletter-section {
       background: linear-gradient(135deg, #4A5C35 0%, #607151 100%);
@@ -1401,6 +1419,15 @@
 
   <div class="testimonials-cta">
     <a href="https://www.pressplay.cc/project/F84147CAF5C8D337BE254B5D3DFB7C62/about" target="_blank">我也想成為下一個成功案例 →</a>
+  </div>
+
+  <!-- 真實截圖佐證 -->
+  <div class="tc-proof">
+    <div class="tc-proof-label">📸 學員課後真實回饋截圖</div>
+    <div class="tc-proof-grid">
+      <img src="/market-stall-guide/assets/images/testimonials-advanced.jpg" alt="成功破萬學員好評截圖" class="tc-proof-img">
+      <img src="/market-stall-guide/assets/images/testimonials-beginner.jpg" alt="新手學員心得截圖" class="tc-proof-img">
+    </div>
   </div>
 </section>
 
