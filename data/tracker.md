@@ -11,8 +11,11 @@
 | 第一次擺攤需要準備什麼？新手完整指南 | 2026-05-28 | /articles/2026-05-28_第一次擺攤準備_optimized.md | - | - | - | - | Optimizer 全過 ✅ |
 | 擺攤賣什麼最賺錢？2026熱銷品類毛利率完整比較 | 2026-05-28 | /articles/2026-05-28_擺攤賣什麼最賺錢_optimized.md | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤賺錢完整攻略：月收入多少？實際數字全公開 | 2026-06-01 | /articles/bai-tan-zhuan-qian/ | - | - | - | - | Optimizer 全過 ✅ |
+| 第一次擺攤怎麼開始？5步驟完整SOP新手攻略 | 2026-06-01 | /articles/first-time-market-stall-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：3
+- 總發布篇數：5
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察（7 天後回 Search Console 查看）
