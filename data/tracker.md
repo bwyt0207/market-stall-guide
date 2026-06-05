@@ -14,8 +14,12 @@
 | 擺攤賺錢完整攻略：月收入多少？實際數字全公開 | 2026-06-01 | /articles/bai-tan-zhuan-qian/ | - | - | - | - | Optimizer 全過 ✅ |
 | 第一次擺攤怎麼開始？5步驟完整SOP新手攻略 | 2026-06-01 | /articles/first-time-market-stall-guide/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 市集擺攤完整攻略：從報名到第一攤，新手 SOP 全步驟 | 2026-06-05 | /articles/market-stall-guide-complete/ | - | - | - | - | Optimizer 全過 ✅ |
+| 擺攤設備清單完整版：必買、選買、可省，附採購攻略 | 2026-06-05 | /articles/market-stall-equipment-checklist/ | - | - | - | - | Optimizer 全過 ✅ |
+| 假日市集擺攤申請完整教學：從找市集到錄取通知 | 2026-06-05 | /articles/holiday-market-stall-application/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：5
+- 總發布篇數：8（本月目標達成 ✅）
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察（7 天後回 Search Console 查看）
