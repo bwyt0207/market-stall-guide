@@ -6,6 +6,7 @@ slug: bai-tan-zhuan-qian
 permalink: /articles/bai-tan-zhuan-qian/
 keyword: 擺攤賺錢
 date: 2026-06-01
+hero_image: https://images.unsplash.com/photo-1556742049-0cfed4f6a45d?w=1200&h=400&fit=crop&auto=format&q=80
 ---
 
 # 擺攤賺錢完整攻略：月收入多少？實際數字全公開

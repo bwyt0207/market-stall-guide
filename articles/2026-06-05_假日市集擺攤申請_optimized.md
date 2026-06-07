@@ -7,6 +7,7 @@ permalink: /articles/holiday-market-stall-application/
 keyword: 假日市集擺攤申請
 lsi_keywords: 台灣市集報名流程, 文創市集攤位招募, 市集審核錄取技巧, 手作市集申請, 市集擺攤費用
 date: 2026-06-05
+hero_image: https://images.unsplash.com/photo-1506617420156-8e4536971650?w=1200&h=400&fit=crop&auto=format&q=80
 internal_links: 3
 cta: true
 ---

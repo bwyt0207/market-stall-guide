@@ -7,6 +7,7 @@ permalink: /articles/first-time-market-stall/
 keyword: 第一次擺攤需要準備什麼
 lsi_keywords: 擺攤設備清單, 出攤準備, 市集新手, 攤位佈置, 擺攤陳列技巧
 date: 2026-05-28
+hero_image: https://images.unsplash.com/photo-1571867424487-3d47dd0d3bfe?w=1200&h=400&fit=crop&auto=format&q=80
 internal_links: 2
 cta: true
 ---

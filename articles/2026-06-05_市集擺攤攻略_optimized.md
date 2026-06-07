@@ -7,6 +7,7 @@ permalink: /articles/market-stall-guide-complete/
 keyword: 市集擺攤
 lsi_keywords: 文創市集擺攤, 擺攤創業新手, 擺攤申請流程, 擺攤一天賺多少, 市集攤商報名
 date: 2026-06-05
+hero_image: https://images.unsplash.com/photo-1555529669-e69e7aa0ba9a?w=1200&h=400&fit=crop&auto=format&q=80
 internal_links: 3
 cta: true
 ---

@@ -7,6 +7,7 @@ permalink: /articles/market-stall-cost/
 keyword: 擺攤費用
 lsi_keywords: 攤位租金, 市集報名費, 擺攤成本, 隱藏費用, 損益平衡
 date: 2026-05-28
+hero_image: https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=1200&h=400&fit=crop&auto=format&q=80
 internal_links: 3
 cta: true
 ---

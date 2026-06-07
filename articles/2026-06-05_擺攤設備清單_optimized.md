@@ -7,6 +7,7 @@ permalink: /articles/market-stall-equipment-checklist/
 keyword: 擺攤設備清單
 lsi_keywords: 市集擺攤必備工具, 擺攤帳篷推薦, 折疊桌椅市集, 攤位展示架, 擺攤行動支付
 date: 2026-06-05
+hero_image: https://images.unsplash.com/photo-1488459716781-31db52582fe9?w=1200&h=400&fit=crop&auto=format&q=80
 internal_links: 3
 cta: true
 ---

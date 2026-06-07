@@ -6,6 +6,7 @@ slug: first-time-market-stall-guide
 permalink: /articles/first-time-market-stall-guide/
 keyword: 第一次擺攤怎麼開始
 date: 2026-06-01
+hero_image: https://images.unsplash.com/photo-1504473498323-47a61fe80e1e?w=1200&h=400&fit=crop&auto=format&q=80
 ---
 
 # 第一次擺攤怎麼開始？從零到出攤的完整 5 步驟 SOP

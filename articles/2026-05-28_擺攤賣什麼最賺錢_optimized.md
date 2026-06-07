@@ -7,6 +7,7 @@ permalink: /articles/best-products-to-sell-at-market/
 keyword: 擺攤賣什麼最賺錢
 lsi_keywords: 擺攤選品, 市集熱銷商品, 擺攤利潤, 攤位毛利, 文創市集賺錢
 date: 2026-05-28
+hero_image: https://images.unsplash.com/photo-1498654896293-37aaa3293460?w=1200&h=400&fit=crop&auto=format&q=80
 internal_links: 2
 cta: true
 ---
