@@ -18,8 +18,11 @@
 | 擺攤設備清單完整版：必買、選買、可省，附採購攻略 | 2026-06-05 | /articles/market-stall-equipment-checklist/ | - | - | - | - | Optimizer 全過 ✅ |
 | 假日市集擺攤申請完整教學：從找市集到錄取通知 | 2026-06-05 | /articles/holiday-market-stall-application/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤完全指南｜2026新手必讀：從零到第一攤的完整攻略 | 2026-06-08 | /articles/beginner-market-stall-guide-2026/ | - | - | - | - | Optimizer 全過 ✅ |
+| 市集擺攤賺錢全攻略｜台灣5大市集類型+選市集5大秘訣 | 2026-06-08 | /articles/market-stall-types-selection-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：8（本月目標達成 ✅）
+- 總發布篇數：10
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察（7 天後回 Search Console 查看）
