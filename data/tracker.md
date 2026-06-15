@@ -20,9 +20,11 @@
 
 | 擺攤完全指南｜2026新手必讀：從零到第一攤的完整攻略 | 2026-06-08 | /articles/beginner-market-stall-guide-2026/ | - | - | - | - | Optimizer 全過 ✅ |
 | 市集擺攤賺錢全攻略｜台灣5大市集類型+選市集5大秘訣 | 2026-06-08 | /articles/market-stall-types-selection-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+| 擺攤許可證完整指南：申請流程、費用與常見問題全解析 | 2026-06-15 | /articles/market-stall-permit-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+| 擺攤定價策略完整指南：6 大訂價法讓客人心甘情願買單 | 2026-06-15 | /articles/market-stall-pricing-strategy/ | - | - | - | - | Optimizer 全過 ✅ |
 
 ## 整體成效摘要
-- 總發布篇數：10
+- 總發布篇數：12
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察（7 天後回 Search Console 查看）
