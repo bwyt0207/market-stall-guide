@@ -23,8 +23,11 @@
 | 擺攤許可證完整指南：申請流程、費用與常見問題全解析 | 2026-06-15 | /articles/market-stall-permit-guide/ | - | - | - | - | Optimizer 全過 ✅ |
 | 擺攤定價策略完整指南：6 大訂價法讓客人心甘情願買單 | 2026-06-15 | /articles/market-stall-pricing-strategy/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤話術完整攻略：10句開場白讓客人自動停留、自然成交 | 2026-06-22 | /articles/market-stall-sales-pitch/ | - | - | - | - | Optimizer 全過 ✅ |
+| 市集攤位佈置完整指南：6大視覺引流技巧，讓客人自動走過來 | 2026-06-22 | /articles/market-stall-display-setup/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：12
+- 總發布篇數：14
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察（7 天後回 Search Console 查看）
