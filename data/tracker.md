@@ -26,10 +26,15 @@
 | 擺攤話術完整攻略：10句開場白讓客人自動停留、自然成交 | 2026-06-22 | /articles/market-stall-sales-pitch/ | - | - | - | - | Optimizer 全過 ✅ |
 | 市集攤位佈置完整指南：6大視覺引流技巧，讓客人自動走過來 | 2026-06-22 | /articles/market-stall-display-setup/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤陳列技巧完整攻略：讓路人 3 秒停下來的 7 個關鍵 | 2026-06-23 | /articles/market-stall-display-tips/ | - | - | - | - | Optimizer 全過 ✅ |
+| 擺攤定價完全攻略：從成本計算到心理策略，新手一看就懂 | 2026-06-23 | /articles/market-stall-pricing-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+| 怎麼選市集？新手擺攤必看的市集選擇完全指南 | 2026-06-23 | /articles/how-to-choose-market-stall/ | - | - | - | - | Optimizer 全過 ✅ |
+| 市集避雷完整指南：5 種常見市集詐騙手法＋自保 SOP | 2026-06-23 | /articles/market-stall-scam-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：14
+- 總發布篇數：18
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
-- 最佳表現文章：待觀察（7 天後回 Search Console 查看）
+- 最佳表現文章：待觀察
 
 <!-- Publisher 每週更新此追蹤表 -->
