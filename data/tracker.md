@@ -31,8 +31,11 @@
 | 怎麼選市集？新手擺攤必看的市集選擇完全指南 | 2026-06-23 | /articles/how-to-choose-market-stall/ | - | - | - | - | Optimizer 全過 ✅ |
 | 市集避雷完整指南：5 種常見市集詐騙手法＋自保 SOP | 2026-06-23 | /articles/market-stall-scam-guide/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤副業完整指南：月入萬元的市集創業 SOP（2026） | 2026-06-29 | /articles/market-stall-side-hustle/ | - | - | - | - | Optimizer 全過 ✅ |
+| 擺攤顧客心理學：5大技巧讓路人停下來自動成交 | 2026-06-29 | /articles/market-stall-customer-psychology/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：18
+- 總發布篇數：20
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察
