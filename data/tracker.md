@@ -34,8 +34,11 @@
 | 擺攤副業完整指南：月入萬元的市集創業 SOP（2026） | 2026-06-29 | /articles/market-stall-side-hustle/ | - | - | - | - | Optimizer 全過 ✅ |
 | 擺攤顧客心理學：5大技巧讓路人停下來自動成交 | 2026-06-29 | /articles/market-stall-customer-psychology/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤收款方式完整攻略：LINE Pay、行動支付、現金怎麼搭配最聰明？ | 2026-07-06 | /articles/market-stall-payment-methods/ | - | - | - | - | Optimizer 全過 ✅ |
+| 擺攤社群行銷完整指南：用 Instagram 讓攤位爆紅、客人自動找上門 | 2026-07-06 | /articles/market-stall-social-media-marketing/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：20
+- 總發布篇數：22
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察
