@@ -37,8 +37,11 @@
 | 擺攤收款方式完整攻略：LINE Pay、行動支付、現金怎麼搭配最聰明？ | 2026-07-06 | /articles/market-stall-payment-methods/ | - | - | - | - | Optimizer 全過 ✅ |
 | 擺攤社群行銷完整指南：用 Instagram 讓攤位爆紅、客人自動找上門 | 2026-07-06 | /articles/market-stall-social-media-marketing/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤下雨天怎麼辦？完整應對指南（帳篷、裝備、現場SOP） | 2026-07-13 | /articles/market-stall-rainy-day-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+| 擺攤怎麼記帳？完整收支管理指南：從成本計算到損益分析 | 2026-07-13 | /articles/market-stall-bookkeeping-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：22
+- 總發布篇數：24
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察
