@@ -40,8 +40,11 @@
 | 擺攤下雨天怎麼辦？完整應對指南（帳篷、裝備、現場SOP） | 2026-07-13 | /articles/market-stall-rainy-day-guide/ | - | - | - | - | Optimizer 全過 ✅ |
 | 擺攤怎麼記帳？完整收支管理指南：從成本計算到損益分析 | 2026-07-13 | /articles/market-stall-bookkeeping-guide/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤商品怎麼拍？讓路人一眼被吸引的攝影技巧完整攻略 | 2026-07-20 | /articles/market-stall-product-photography/ | - | - | - | - | Optimizer 全過 ✅ |
+| 擺攤要繳稅嗎？市集攤販稅務申報完整指南（2026） | 2026-07-20 | /articles/market-stall-tax-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：24
+- 總發布篇數：26
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察
