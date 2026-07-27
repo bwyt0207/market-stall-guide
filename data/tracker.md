@@ -43,8 +43,11 @@
 | 擺攤商品怎麼拍？讓路人一眼被吸引的攝影技巧完整攻略 | 2026-07-20 | /articles/market-stall-product-photography/ | - | - | - | - | Optimizer 全過 ✅ |
 | 擺攤要繳稅嗎？市集攤販稅務申報完整指南（2026） | 2026-07-20 | /articles/market-stall-tax-guide/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤進貨攻略完整指南：選品、批發管道、庫存控管一次搞懂 | 2026-07-27 | /articles/market-stall-sourcing-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+| 擺攤回頭客攻略：讓市集顧客一再回來的 7 個關鍵策略 | 2026-07-27 | /articles/market-stall-repeat-customers/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：26
+- 總發布篇數：28
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察
