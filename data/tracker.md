@@ -46,8 +46,11 @@
 | 擺攤進貨攻略完整指南：選品、批發管道、庫存控管一次搞懂 | 2026-07-27 | /articles/market-stall-sourcing-guide/ | - | - | - | - | Optimizer 全過 ✅ |
 | 擺攤回頭客攻略：讓市集顧客一再回來的 7 個關鍵策略 | 2026-07-27 | /articles/market-stall-repeat-customers/ | - | - | - | - | Optimizer 全過 ✅ |
 
+| 擺攤品牌建立完整指南：讓顧客記住你、回頭找你的 7 個關鍵策略 | 2026-08-03 | /articles/market-stall-brand-building/ | - | - | - | - | Optimizer 全過 ✅ |
+| 市集旺季攻略完整指南：中秋、聖誕、春節如何讓單日業績翻倍？ | 2026-08-03 | /articles/market-stall-peak-season-guide/ | - | - | - | - | Optimizer 全過 ✅ |
+
 ## 整體成效摘要
-- 總發布篇數：28
+- 總發布篇數：30
 - 本月總點擊：0（待 Search Console 更新）
 - 平均排名：-
 - 最佳表現文章：待觀察
